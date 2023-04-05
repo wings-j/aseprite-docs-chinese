@@ -6,7 +6,7 @@ Aseprite 文档中文翻译。
 
 [基础](basics.md)
 
-- [图像和精灵](sprite.md)
+- [图像 & 精灵](sprite.md)
 - [颜色](color.md)
 - [绘图](drawing.md)
 - [选择](selecting.md)
