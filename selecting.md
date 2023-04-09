@@ -1,57 +1,42 @@
 # Selecting
 
-You can select parts of the sprite using one of the selection tools
-e.g. the Marquee Tool ![Marquee Tool Icon](tools/marquee-tool.png) (<kbd>M</kbd> key),
-and then [move it](move-selection.md) or [transform it](transformations.md)
-([scale](resize.md), [rotate](rotate.md), etc.). When you select a
-portion of the sprite, you will see a
-[marching ants](https://en.wikipedia.org/wiki/Marching_ants) effect:
+你可以用选区工具，比如框选工具![框选工具图标](tools/marquee-tool.png)（<kbd>M</kbd>），来选择精灵的一部分，然后进行[移动](move-selection.md)和[变换](transformations.md)（[缩放](resize.md)、[旋转](rotate.md)等等）。当你选择了精灵的部分后，你会看到[蚂蚁行军](https://en.wikipedia.org/wiki/Marching_ants)效果。
 
-![Marching ants](selecting/marching-ants.gif)
+![蚂蚁行军](selecting/marching-ants.gif)
 
-When you make a selection, you are selecting the active [cel](cel.md),
-so all transformation will be made to that specific cel only.
+当你作出选区，你选择的是激活的[赛璐珞](cel.md)，所以所有的变换都只会应用到这个特定的赛璐珞。
 
-## Add/Subtract/Intersect
+## 加/减/交叉
 
-In the [context bar](context-bar.md) you can find a set of modifiers that
-change what to do with the selected region: ![Modifiers](selecting/modifiers.png)
+在[上下文栏](context-bar.md)中，你会发现一些影响已选择区域的修饰器：![修饰器](selecting/modifiers.png)。
 
-By default, when you press the left mouse button, drag it, and then
-release it, it will replace the whole selection. But you can modify
-this behavior with the other options (each option has a keyboard
-shortcut):
+默认情况下，当你按下鼠标左键，拖动然后释放，它会替换整个选取。但你可以用其它选项（每个选项都有一个键盘快捷键）调整这一行为：
 
-* ![Replace Selection](selecting/replace-selection.png): Default operation, replace the whole selection with the new one (drag left mouse button)
-* ![Add Selection](selecting/add-selection.png): Creates a union between the existing selection a the new one (drag left mouse button + <kbd>Shift</kbd> key)
-* ![Subtract Selection](selecting/subtract-selection.png): Subtracts the new selection to the existing one (drag left mouse button + <kbd>Alt+Shift</kbd> key, or alternative: drag right mouse button)
-* ![Intersect Selection](selecting/intersect-selection.png): Intersects the existing selection with the new one (drag left mouse button + <kbd>Ctrl+Shift</kbd>)
+- ![替换选区](selecting/replace-selection.png)：默认行为，用新选区替换整个选区（左键拖动）。
+- ![加选区](selecting/add-selection.png): 合并新选区和现有选区（左键拖动 + <kbd>Shift</kbd>）。
+- ![减选区](selecting/subtract-selection.png)：现有选区减去新选区（左键拖动 + <kbd>Alt+Shift</kbd> 或者：右键拖动）。
+- ![交叉选区](selecting/intersect-selection.png): 交叉新选区和现有选区（左键拖动 + <kbd>Ctrl+Shift</kbd>）。
 
-These keys can be customized from the [*Edit > Keyboard Shortcuts > Action Modifiers*](keyboard-shortcuts.md#action-modifiers).
+这些按键可以在[_Edit > Keyboard Shortcuts > Action Modifiers_](keyboard-shortcuts.md#action-modifiers)自定义。
 
-## Select Content
+## 选择内容
 
-You can select:
-- Entire sprite canvas using *Select > All* (<kbd>Ctrl+A</kbd>
-or <kbd>⌘A</kbd>)
-- Active [cel](cel.md) bounds
-using *Edit > Transform* (<kbd>Ctrl+T</kbd> or <kbd>⌘T</kbd>)
-- Active frame content (non-transparent pixels) using <kbd>Ctrl+Left click</kbd> on a layer (keyboard shortcuts for Add/Subtract/Intersect modifiers can be applied)
+你可以选择：
 
-## Deselect and reselect
+- 整个画布，使用*Select > All*（<kbd>Ctrl+A</kbd>或<kbd>⌘A</kbd>）。
+- 激活的[赛璐珞](cel.md)边界，使用*Edit > Transform*（<kbd>Ctrl+T</kbd>或<kbd>⌘T</kbd>）。
+- 激活的帧内容（非透明内容），在图层上使用<kbd>Ctrl+左键</kbd>（加/减/交叉修饰器的键盘快捷键也可以使用）。
 
-You can hide the current selection using *Select > Deselect*
-(<kbd>Ctrl+D</kbd> or <kbd>⌘D</kbd>). Then you can make it appear again using
-*Select > Reselect* (<kbd>Ctrl+Shift+D</kbd> or <kbd>⇧⌘D</kbd>).
+## 取消选择和重新选择
 
-## Invert
+你可以用*Select > Deselect*（<kbd>Ctrl+D</kbd>或<kbd>⌘D</kbd>）隐藏当前选区。然后你可以使用*Select > Reselect*（<kbd>Ctrl+Shift+D</kbd>或<kbd>⇧⌘D</kbd>）让它重新出现。
 
-You can invert the selection using
-*Select > Invert* (<kbd>Ctrl+Shift+I</kbd> or <kbd>⇧⌘I</kbd>).
+## 反选
+
+你可以使用*Select > Invert*（<kbd>Ctrl+Shift+I</kbd>或<kbd>⇧⌘I</kbd>）反向选择。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Transformations](transformations.md) |
-[Move Selection](move-selection.md)
+[变换](transformations.md) | [移动选区](move-selection.md)
