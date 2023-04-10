@@ -1,43 +1,32 @@
-# Transformations
+# 变换
 
-Aseprite supports flipping, resizing, cropping, trimming, and rotating
-the image. You can apply any operation to the canvas, sprite, or
-selection. Any transformation applicable to a sprite or selection can
-be applied to multiple layers, frames or cels at the same time.
+Aseprite 支持翻转、调整大小、裁剪、修建和旋转图像。你可以对画布、精灵或者选区应用任何操作。适用于精灵或选区的变化，也可以同时用于图层、帧或赛璐珞。
 
-## Transforming Canvas
+## 变换画布
 
-You can apply all fundamental transformation to the canvas using
-options under the *Sprite* menu:
+你可以对画布应用所有基础变换，使用*Sprite*菜单下的选项：
 
-* [Flip canvas](flip-canvas.md)
-* [Resize, Crop or Trim canvas](canvas.md)
-* [Rotate canvas](rotate-canvas.md)
+- [翻转画布](flip-canvas.md)
+- [调整画布大小、裁剪或修剪画布](canvas.md)
+- [旋转画布](rotate-canvas.md)
 
-## Transforming Sprite or Selection
+## 变换精灵或选区
 
-A sprite or a selection can be transformed using options mostly found
-under the *Edit* menu, or by using the selection handles:
+大部分在*Edit*菜单下的变换选项可以运用到精灵或选区上，或者使用选区控点：
 
-* [Flip sprite or selection](flip.md)
-* [Move complete layer/cel](move-tool.md) or [move selection](move-selection.md)
-* [Resize sprite or selection](resize.md)
-* [Rotate sprite or selection](rotate.md)
+- [翻转精灵或选区](flip.md)
+- [移动整个图层或赛璐珞](move-tool.md)或者[移动选区](move-selection.md)
+- [调整精灵或选区的大小](resize.md)
+- [旋转精灵或选区](rotate.md)
 
-## Transforming Multiple Layers, Frames or Cels
+## 变换多个图层、帧或赛璐珞
 
-Transformations will be applied to every layer, frame, and cel
-selected on the [timeline](timeline.md). If there's no selection on
-the timeline, transformations will be applied only to the active cel.
+变换会被应用到[时间线](timeline.md)上选择的每个图层、帧和赛璐珞。如果时间线上没有被选择的内容，那么变换只会被应用到当前激活的赛璐珞。
 
-> Note: When transforming multiple layers, frames, or cels using the
-> selections handles, the transformation will be shown in real time
-> only for the active cel. The transformation will be applied to all
-> other cels after committing the change by clicking outside the
-> selection.
+> 注意：当使用选区控点变换多个图层、帧和赛璐珞时，只有当前赛璐珞的变换会被实时显示。其余图层的变换，会在点击选取外提交变化后被应用。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Selecting](selecting.md)
+[选择](selecting.md)
