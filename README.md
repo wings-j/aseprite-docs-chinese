@@ -16,7 +16,6 @@ Aseprite 文档中文翻译。
 
 - [图层](layers.md)
 - [动画](animation.md)
-- [瓦片地图](tilemap.md)
 - [切片](slices.md)
 
 [文件](files.md)

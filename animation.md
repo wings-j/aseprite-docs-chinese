@@ -1,46 +1,37 @@
-# Animation
+# 动画
 
-Aseprite's main goal is to be a tool to create animations. The
-[timeline](timeline.md) gives you total control over frames,
-[layers](layers.md), and [cels](cel.md).
+Aseprite 的主要目标是成为创建动画的工具。[时间线](timeline.md)给你对帧、[图层](layers.md)和[赛璐珞](cel.md)的完全控制。
 
-The general workflow is:
+常规工作流如下：
 
-1. You [draw](drawing.md) the first frame
-1. Then you [add new frames](new-frame.md) (e.g. pressing <kbd>Alt+N</kbd>) and continue drawing them
-1. You can navigate frames using <kbd>Left</kbd> and <kbd>Right</kbd> arrow keys (or <kbd>,</kbd> and <kbd>.</kbd>) to
-   go to the previous or next frames respectively
-1. You can [preview the animation](preview-window.md) using
-   the Play button ![Play icon](animation/play-button.png) or pressing <kbd>Enter</kbd> key
-1. You can [tag](tags.md) a range of frames for future reference or to separate
-   different animations of the same sprite
+1. 在第一帧[绘图](drawing.md)。
+2. 然后添加[添加新帧](new-frame.md)（比如按<kbd>Alt+N</kbd>）然后继续绘图。
+3. 你可以用<kbd>Left</kbd><kbd>Right</kbd>箭头按键在帧之间导航（或者<kbd>,</kbd>和<kbd>.</kbd>），分别去往之前或之后的帧。
+4. 你可以使用播放按钮![Play icon](animation/play-button.png)或按下<kbd>Enter</kbd>键来[预览动画](preview-window.md)。
+5. 你可以给一定范围内的帧打[标签](tags.md)，为了将来更好的参考或者区分同一个精灵的不同动画。
 
-There are some extra tools like
-the [Preview Window](preview-window.md) and [Onion Skinning](onion-skinning.md) that
-will make your life a lot easier to animate.
+有一些额外的工具可以使用，比如[预览窗口](preview-window.md)和[洋葱皮](onion-skinning.md)，它们会让你更容易制作动画。
 
-### Common Operations
+### 常规操作
 
-1. [Add a new frame copying the current one](new-frame.md)
-1. [Add a new empty frame](new-frame.md#new-empty-frame)
-1. [Copy frames](copy-frames.md) or [cels](copy-cels.md)
-1. [Move frames](move-frames.md) or [cels](move-cels.md)
-1. Remove frames
-1. [Reuse frames](linked-cels.md)
-1. [Tag several frames](tags.md)
-1. [Change the duration of a specific frame](frame-duration.md)
-1. [Copy layers/frames/cels between files](timeline.md#copy-between-documents)
-1. [Loop a section](loop.md)
-1. [Reverse frames](reverse-frames.md)
+1. [复制当前帧到新帧](new-frame.md)
+2. [添加一个空白新帧](new-frame.md#new-empty-frame)
+3. [复制帧](copy-frames.md)或[赛璐珞](copy-cels.md)
+4. [移动帧](move-frames.md)或[赛璐珞](move-cels.md)
+5. 移除帧
+6. [复用帧](linked-cels.md)
+7. [标记多个帧](tags.md)
+8. [改变特定帧的时长](frame-duration.md)
+9. [在文件之间复制图层、帧、赛璐珞](timeline.md#copy-between-documents)
+10. [循环一个节](loop.md)
+11. [翻转帧](reverse-frames.md)
 
-### Onion Skinning
+### 洋葱皮
 
-See the [Onion Skinning](onion-skinning.md) section.
+参见[洋葱皮](onion-skinning.md)章节.
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Timeline](timeline.md) |
-[Onion Skinning](onion-skinning.md) |
-[Continuous Layers](continuous-layers.md)
+[时间线](timeline.md) | [洋葱皮](onion-skinning.md) | [连续图层](continuous-layers.md)

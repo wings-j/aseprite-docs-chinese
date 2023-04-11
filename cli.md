@@ -1,14 +1,14 @@
 # Aseprite Command Line Interface
 
 You can convert or export your sprites to other formats (or
-textures+json data) from the command line.  See
+textures+json data) from the command line. See
 [Platform-specific Details](#platform-specific-details) section to
 know how to use the command line.
 
-* [Options](#options)
-* [Use Cases](#use-cases)
-* [Platform-specific Details](#platform-specific-details)
-* [Automating the process](#automating-the-process)
+- [Options](#options)
+- [Use Cases](#use-cases)
+- [Platform-specific Details](#platform-specific-details)
+- [Automating the process](#automating-the-process)
 
 ![Atlas](//www.aseprite.org/assets/images/atlas.gif)
 
@@ -90,7 +90,6 @@ Options:
       --<a href="#list-slices">list-slices</a>            List slices of the next given sprite sprite
                                or include slices in JSON data
       --<a href="#oneframe">oneframe</a>               Load just the first frame
-      --<a href="#export-tileset">export-tileset</a>         Export only tilesets from visible tilemap layers
   -v, --<a href="#verbose">verbose</a>                Explain what is being done
       --<a href="#debug">debug</a>                  Extreme verbose mode and copy log to desktop
   -?, --<a href="#help">help</a>                   Display this help and exits
@@ -127,7 +126,7 @@ in disk).
 ## --save-as
 
 Saves the latest opened document with the given file name. It's like
-calling `File > Save As` from the interface.  Example:
+calling `File > Save As` from the interface. Example:
 
     aseprite -b sprite.ase --save-as frame001.png
 
@@ -152,7 +151,7 @@ palettes:
 
 On **v1.1** this parameter was used to change the default program
 palette, but it can be done now using the
-*[Save as Default Palette](default-palette.md)* menu option.
+_[Save as Default Palette](default-palette.md)_ menu option.
 
 ## --scale
 
@@ -170,9 +169,9 @@ Resizes all images with the given `FACTOR` specified before
 Dithering algorithm used in [--color-mode indexed](#color-mode) to convert images from
 RGB to Indexed.
 
-* `--dithering-algorithm none`
-* `--dithering-algorithm ordered`
-* `--dithering-algorithm old`
+- `--dithering-algorithm none`
+- `--dithering-algorithm ordered`
+- `--dithering-algorithm old`
 
 ## --dithering-matrix
 
@@ -183,10 +182,10 @@ Dithering matrix used for
 [--color-mode indexed](#color-mode) to convert images
 from RGB to Indexed. The `MATRIX` can be:
 
-* `--dithering-matrix bayer8x8`
-* `--dithering-matrix bayer4x4`
-* `--dithering-matrix bayer2x2`
-* Or the identifier (`id`) of other dithering matrices in installed extensions.
+- `--dithering-matrix bayer8x8`
+- `--dithering-matrix bayer4x4`
+- `--dithering-matrix bayer2x2`
+- Or the identifier (`id`) of other dithering matrices in installed extensions.
 
 These default dithering matrices (`bayer8x8`, etc.) are in the
 [bayer-matrices](https://github.com/aseprite/aseprite/tree/master/data/extensions/bayer-matrices)
@@ -200,14 +199,15 @@ ids in its [packages.json](https://github.com/aseprite/aseprite/blob/master/data
 Changes the color mode to the given `MODE` of all previously opened
 sprites. The `MODE` can be:
 
-* `--color-mode rgb`
-* `--color-mode grayscale`
-* `--color-mode indexed`
+- `--color-mode rgb`
+- `--color-mode grayscale`
+- `--color-mode indexed`
 
 Remember that [--dithering-algorithm](#dithering-algorithm) and [--dithering-matrix](#dithering-matrix)
 will affect the RGB → Indexed conversion.
 
 Examples:
+
 ```
 aseprite -b idx-sprite.ase --color-mode rgb --save-as rgb-output.png
 aseprite -b rgb-sprite.ase --dithering-algorithm ordered --dithering-matrix bayer8x8 --color-mode indexed --save-as idx-output.png
@@ -227,8 +227,8 @@ See [--sheet](#sheet) option to change the destination of the sprite sheet image
 Changes the format used to shave the sprite sheet data specified in
 [--data](#data) option. Available formats are:
 
-* `--format json-hash` (default format) ([example](https://gist.github.com/dacap/db18e5747a4b6e208d3c))
-* `--format json-array` ([example](https://gist.github.com/dacap/a32adb9248320326733a))
+- `--format json-hash` (default format) ([example](https://gist.github.com/dacap/db18e5747a4b6e208d3c))
+- `--format json-array` ([example](https://gist.github.com/dacap/a32adb9248320326733a))
 
 ## --sheet
 
@@ -251,11 +251,11 @@ Specifies a fixed height (in pixels) for the sprite sheet in [--sheet](#sheet).
 
 Type of sprite sheet when [--sheet](#sheet) is used:
 
-* `horizontal`
-* `vertical`
-* `rows`
-* `columns`
-* `packed` (same as [--sheet-pack](#sheet-pack))
+- `horizontal`
+- `vertical`
+- `rows`
+- `columns`
+- `packed` (same as [--sheet-pack](#sheet-pack))
 
 ## --sheet-pack
 
@@ -268,7 +268,7 @@ line, so then you can save each layer as an independent image/item. It
 affects [--sheet](#sheet) and [--save-as](#save-as) options.
 **Warning**: The `--split-layers` option must be **before** your sprite.
 
-* Example:
+- Example:
 
       aseprite.exe -b --split-layers with-layers.ase --save-as output1.png
 
@@ -306,14 +306,6 @@ Since **v1.2-beta8**, splits next document slices into different
 files. It affects the [--save-as](#save-as) option. Same as doing:
 
     aseprite.exe -b sheet.ase --save-as part-{slice}.png
-
-## --split-grid
-
-    aseprite -b --split-grid tilemaps.png --sheet tiles.png
-
-Since **v1.3-beta21**: Indicates that [--sheet](#sheet) should export
-each grid cell of the given file as a separate sprite in the sprite
-sheet.
 
 ## --layer
 
@@ -404,8 +396,8 @@ Includes a border to each frame of N pixels. It affects [--sheet](#sheet) option
 ## --trim
 
 Removes borders from sprites/layers/cels before save
-them. (I.e. executes the *Edit > Trim* option for each image to be
-exported.)  It affects [--sheet](#sheet) and [--save-as](#save-as)
+them. (I.e. executes the _Edit > Trim_ option for each image to be
+exported.) It affects [--sheet](#sheet) and [--save-as](#save-as)
 options.
 
 ## --crop
@@ -439,18 +431,18 @@ generated in sprite sheets on [--sheet](#sheet) or files generated on
 
 The `FORMAT` string can contain some special values:
 
-* `{fullname}`: Original sprite full filename (path + file + extension).
-* `{path}`: Path of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `C:\game-assets`.
-* `{name}`: Name (including extension) of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `file.ase`.
-* `{title}`: Name without extension of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `file`.
-* `{extension}`: Extension of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `ase`.
-* `{layer}`: Current layer name.
-* `{tag}`: Current tag name.
-* `{innertag}`: Smallest/inner current tag name.
-* `{outertag}`: Largest/outer current tag name.
-* `{frame}`: Current frame (starting from `0`). You can use `{frame1}` to start from 1, or other formats like `{frame000}`, or `{frame001}`, etc.
-* `{tagframe}`: The current frame in the current tag. It's `0` for the first frame of the tag, and so on. Same as `{frame}`, it accepts variants like `{tagframe000}`.
-* `{duration}` The duration of the current frame.
+- `{fullname}`: Original sprite full filename (path + file + extension).
+- `{path}`: Path of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `C:\game-assets`.
+- `{name}`: Name (including extension) of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `file.ase`.
+- `{title}`: Name without extension of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `file`.
+- `{extension}`: Extension of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `ase`.
+- `{layer}`: Current layer name.
+- `{tag}`: Current tag name.
+- `{innertag}`: Smallest/inner current tag name.
+- `{outertag}`: Largest/outer current tag name.
+- `{frame}`: Current frame (starting from `0`). You can use `{frame1}` to start from 1, or other formats like `{frame000}`, or `{frame001}`, etc.
+- `{tagframe}`: The current frame in the current tag. It's `0` for the first frame of the tag, and so on. Same as `{frame}`, it accepts variants like `{tagframe000}`.
+- `{duration}` The duration of the current frame.
 
 For example, if `animation-with-layers.ase` contains three frames with two layers (named `Face` and `Background`):
 
@@ -583,13 +575,6 @@ useful to load just one frame in a image sequence (e.g. loading just
 to load just the first frame of a full animation (e.g. useful to
 create a thumbnail of the animation).
 
-## --export-tileset
-
-    aseprite -b --export-tileset tilemaps.aseprite --sheet tilesets-sprite-sheet.png
-
-Since **v1.3-beta21**: Indicates that [--sheet](#sheet) should export
-tilesets of the visible/filtered layers in the given sprite.
-
 ## --debug
 
 If you execute Aseprite with the `--debug` parameter in the command
@@ -607,8 +592,8 @@ properties](http://imgur.com/txXcgzO).
 
 It will log more information in the `aseprite.log` file:
 
-* On Windows: `aseprite.log` is located in `%AppData%\Aseprite\aseprite.log`
-* On macOS and Linux: `aseprite.log` is located in `~/.config/aseprite/aseprite.log`
+- On Windows: `aseprite.log` is located in `%AppData%\Aseprite\aseprite.log`
+- On macOS and Linux: `aseprite.log` is located in `~/.config/aseprite/aseprite.log`
 
 ## --help
 
