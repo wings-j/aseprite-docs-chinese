@@ -1,63 +1,43 @@
-# Slices
+# 切片
 
-With the Slice tool ![Slice tool icon](tools/slice-tool.png)
-(<kbd>Shift+C</kbd> key) you can indicate regions of your sprite and
-assign a name/label to that region with some extra user defined
-information. There is support to specify
-[9-slices](https://en.wikipedia.org/wiki/9-slice_scaling)/9-patches
-information.
+通过切片工具![Slice tool icon](tools/slice-tool.png)（<kbd>Shift+C</kbd>），你可以指示精灵区域并赋予一个名称或标签，提供一些用户自定义的信息。这里有一些[9 宫格](https://en.wikipedia.org/wiki/9-slice_scaling)的相关信息。
 
-With this tool you can:
+通过这个工具你可以：
 
-1. Create a new slice marking a rectangular region pressing the mouse
-   button, dragging the mouse, and releasing the button.
-1. If the marked rectangle touches existing slices, those slices will
-   be selected.
-1. You can drag-and-drop a set of selected slices to move them to
-   other place. Or you can resize the whole set of slices dragging
-   from the corners or edges.
-1. After selecting some slices you can delete them pressing the Delete
-   key or *Edit > Delete* menu option.
-1. Double-clicking a slice you will see the [Slice
-   Properties](#slice-properties) dialog.
+1. 按下鼠标、拖动鼠标、放开鼠标，然后创建一个标记矩形的新切片。
+2. 如果标记的矩形接触现有切片，那些切片会被选中。
+3. 你可以拖放一组选中的切片来把它们移动到其它地方。或者你可以重新调整从角落或边缘拖过来的切片的大小。
+4. 通过按下删除键或*Edit > Delete*菜单选项，你可以删除选中的切片。
+5. 双击一个切片，你会看到[切片属性](#slice-properties)对话框。
 
-## Slice Properties
+## 切片属性
 
-If you double-click a slice, you will see its properties:
+如果你双击一个切片，你会看到它的属性：
 
-![Slice Properties Dialog](slices/properties.png)
+![切片属性对话框](slices/properties.png)
 
-Here you can specify:
+在这里你可以指定：
 
-1. the bounds of the slice in the canvas
-1. a 9-slices property to specify an internal rectangle to sub-divide the bounds into sub-slices
-1. a pivot to specify the central/base location of the sprite inside the slice
+1. 画布中切片的边界。
+2. 九宫格属性，指定一个内部的矩形，进而将边界划分为子切片。
+3. 切片内精灵的中心或基础锚点位置。
 
-## Exporting Slices
+## 导出切片
 
-You can export each slice as a different sprite using the
-[--split-slice option](cli.md/#split-slices).
+你可以使用[--split-slice 选项](cli.md/#split-slices)导出切片会不同的精灵。
 
-You can also export the slice information in a sprite sheet JSON using
-the [--data option](cli.md/#data) or the *File > Export Sprite Sheet*
-menu option with the JSON output checked. This is an example of the exported data:
+你也可以使用[--data 选项](cli.md/#data)或*File > Export Sprite Sheet*菜单并勾选 JSON 输出，来导出切片信息到一个精灵表 JSON。这里有个导出数据的示例：
 
 ```json
-{ ...
- "meta": {
-  ...
-  "slices": [
-   { "name": "Button-patch",
-     "color": "#0000ffff",
-     "keys": [{ "frame": 0,
-                "bounds": {"x": 118, "y": 118, "w": 20, "h": 21 },
-                "center": {"x": 5, "y": 5, "w": 10, "h": 9 } }] }
-  ]
+{
+  "meta": {
+    "slices": [{ "name": "Button-patch", "color": "#0000ffff", "keys": [{ "frame": 0, "bounds": { "x": 118, "y": 118, "w": 20, "h": 21 }, "center": { "x": 5, "y": 5, "w": 10, "h": 9 } }] }]
+  }
 }
 ```
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Drawing](drawing.md)
+[绘图](drawing.md)
