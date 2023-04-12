@@ -1,53 +1,35 @@
-# Sprite sheets
+# 精灵表
 
-A sprite sheet is one big image with several frames of the same sprite
-on it. For example, you can save this animation:
+精灵表是一个包含同一个精灵多帧图像的大图像。比如，你可以保存动画：
 
-![Running Guy](sprite-sheet/running-guy.gif)
+![奔跑的人](sprite-sheet/running-guy.gif)
 
-Like an horizontal sprite sheet:
+为水平的精灵表：
 
-![Horizontal Sprite Sheet](sprite-sheet/running-guy-horz.png)
+![水平精灵表](sprite-sheet/running-guy-horz.png)
 
-A vertical one:
+垂直的：
 
-![Vertical Sprite Sheet](sprite-sheet/running-guy-vert.png)
+![垂直精灵表](sprite-sheet/running-guy-vert.png)
 
-Or a matrix:
+或矩阵：
 
-![Matrix Sprite Sheet](sprite-sheet/running-guy-matrix.png)
+![矩阵精灵表](sprite-sheet/running-guy-matrix.png)
 
-In the following section you will know how to export and import this
-kind of images into Aseprite.
+接下来的章节中你会了解到如何导出和导出这种图像到 Aseprite。
 
-## Import
+## 导入
 
-To import a sprite sheet use *File > Import Sprite Sheet* option.
-Then you can select the file to import with an assigned offset `x`,
-`y` and sprite `width`, `height`.
+要导入精灵表，可以使用*File > Import Sprite Sheet*选项。接着你可以选择需要导入的文件，并分配`x`和`y`偏执与精灵`width`和`height`。
 
-![Import Sprite Sheet 01](sprite-sheet/running-guy-import-01.png)
+![导入精灵表 01](sprite-sheet/running-guy-import-01.png)
 
-Padding is available if there are gapes between sprites,
-and the sheet type will affect the order of the sprites taken in.
+如果精灵之间有间距，可以提供编剧选项，表类型会影响接收的精灵的顺序。
 
-![Import Sprite Sheet 02](sprite-sheet/running-guy-import-02.png)
+![导入精灵表 02](sprite-sheet/running-guy-import-02.png)
 
-## Export
+## 导出
 
-To export a sprite sheet use *File > Export Sprite Sheet* option.
-You can select all visible layers or a certain layer,
-and select the frames based on tags.
+要导出精灵表，可以使用*File > Export Sprite Sheet*选项。你可以选择一个可见图层或一个特定的图层，和基于标签选择帧。
 
-![Export Sprite Sheet](sprite-sheet/running-guy-export.png)
-
-## Automate from Command Line
-
-(*Work-in-progress*)
-
-## Texture Atlases
-
-A texture atlas is an huge image with all the graphics, sprites and
-images that a game will use. It's called "texture" because the image
-can be loaded into the video memory, to render graphics on screen with
-hardware acceleration.
+![导出精灵表](sprite-sheet/running-guy-export.png)
