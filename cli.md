@@ -1,99 +1,82 @@
-# Aseprite Command Line Interface
+# Aseprite 命令行接口
 
-You can convert or export your sprites to other formats (or
-textures+json data) from the command line. See
-[Platform-specific Details](#platform-specific-details) section to
-know how to use the command line.
+你可以在命令行转换和导出精灵为其它格式（或者纹理 + JSON 数据）。参见[平台特定细节](#platform-specific-details)如何使用命令行。
 
-- [Options](#options)
-- [Use Cases](#use-cases)
-- [Platform-specific Details](#platform-specific-details)
-- [Automating the process](#automating-the-process)
+- [选项](#options)
+- [用例](#use-cases)
+- [平台特定细节](#platform-specific-details)
+- [自动处理](#automating-the-process)
 
-![Atlas](//www.aseprite.org/assets/images/atlas.gif)
+![地图](//www.aseprite.org/assets/images/atlas.gif)
 
-# Options
+# 选项
 
 <pre>
-Usage:
+用法：
   aseprite.exe [OPTIONS] [FILES]...
 
-Options:
-      --<a href="#shell">shell</a>                  Start an interactive console to execute scripts
-  -b, --<a href="#batch">batch</a>                  Do not start the UI
-  -p, --<a href="#preview">preview</a>                Do not execute actions, just print what will be
-                               done
-      --<a href="#save-as">save-as</a> &lt;filename&gt;     Save the last given sprite with other format
-      --<a href="#palette">palette</a> &lt;filename&gt;     Change the palette of the last given sprite
-      --<a href="#scale">scale</a> &lt;factor&gt;         Resize all previously opened sprites
+选项：
+      --<a href="#shell">shell</a>                  启动一个交互式控制台来执行脚本
+  -b, --<a href="#batch">batch</a>                  不要启动 UI
+  -p, --<a href="#preview">preview</a>                不要执行动作，只打印会发生的事
+      --<a href="#save-as">save-as</a> &lt;filename&gt;     保存给定的精灵为其它格式
+      --<a href="#palette">palette</a> &lt;filename&gt;     改变上一个给定精灵的调色板
+      --<a href="#scale">scale</a> &lt;factor&gt;         调整所有之前打开的精灵的尺寸
       --<a href="#dithering-algorithm">dithering-algorithm</a> &lt;algorithm&gt;
-                               Dithering algorithm used in --color-mode
-                               to convert images from RGB to Indexed
+                               --color-mode 使用的用于将 RGB 模式转换为索引模式的抖动算法
       --<a href="#dithering-matrix">dithering-matrix</a> &lt;matrix&gt;
-                               Matrix used in ordered dithering algorithm
-      --<a href="#color-mode">color-mode</a> &lt;mode&gt;      Change color mode of all previously
-                               opened sprites:
+                               有序抖动算法使用的矩阵
+      --<a href="#color-mode">color-mode</a> &lt;mode&gt;      改变所有之前打开的精灵的颜色模式：
                                  rgb
                                  grayscale
                                  indexed
-      --<a href="#data">data</a> &lt;filename.json&gt;   File to store the sprite sheet metadata
-      --<a href="#format">format</a> &lt;format&gt;        Format to export the data file (json-hash, json-array)
-      --<a href="#sheet">sheet</a> &lt;filename.png&gt;   Image file to save the texture
-      --<a href="#sheet-type">sheet-type</a>             Algorithm to create the sprite sheet:
+      --<a href="#data">data</a> &lt;filename.json&gt;   存储精灵表元数据的文件
+      --<a href="#format">format</a> &lt;format&gt;        输出数据的文件格式（json-hash，json-array）
+      --<a href="#sheet">sheet</a> &lt;filename.png&gt;   保存纹理的图片文件
+      --<a href="#sheet-type">sheet-type</a>             创建精灵表的算法：
                                  horizontal
                                  vertical
                                  rows
                                  columns
                                  packed
-      --<a href="#sheet-width">sheet-width</a> &lt;pixels&gt;   Sprite sheet width
-      --<a href="#sheet-height">sheet-height</a> &lt;pixels&gt;  Sprite sheet height
+      --<a href="#sheet-width">sheet-width</a> &lt;pixels&gt;   精灵表宽度
+      --<a href="#sheet-height">sheet-height</a> &lt;pixels&gt;  精灵表高度
       --<a href="#sheet-columns">sheet-columns</a> &lt;columns&gt;
       --<a href="#sheet-rows">sheet-rows</a> &lt;rows&gt;
-      --<a href="#sheet-pack">sheet-pack</a>             Use a packing algorithm to avoid waste of space
-                               in the texture
-      --<a href="#split-layers">split-layers</a>           Import each layer of the next given sprite as
-                               a separated image in the sheet
-      --<a href="#split-tags">split-tags</a>             Save each tag as a separated file
-      --<a href="#split-slices">split-slices</a>           Save each slice as a separated file
-      --<a href="#split-grid">split-grid</a>             Save each grid tile as a separated file
-      --<a href="#layer">layer</a> &lt;name&gt; or
-      --<a href="#layer">import-layer</a> &lt;name&gt;    Include just the given layer in the sheet
-      --<a href="#all-layers">all-layers</a>             Make all layers visible
-                               By default hidden layers will be ignored
-      --<a href="#ignore-layer">ignore-layer</a> &lt;name&gt;    Exclude the given layer in the sheet
-                               or save as operation
+      --<a href="#sheet-pack">sheet-pack</a>             使用打包算法以避免纹理的空间浪费
+      --<a href="#split-layers">split-layers</a>           导入下一个给定精灵的每个图层为表中的独立的图片
+      --<a href="#split-tags">split-tags</a>             保存每个标签为独立的文件
+      --<a href="#split-slices">split-slices</a>           保存每个切片为独立的文件
+      --<a href="#layer">layer</a> &lt;name&gt; 或
+      --<a href="#layer">import-layer</a> &lt;name&gt;    在表中包含给定的图层
+      --<a href="#all-layers">all-layers</a>             使所有图层可见。默认情况下隐藏图层会被忽略
+      --<a href="#ignore-layer">ignore-layer</a> &lt;name&gt;    在表中排除给定图层或保存为操作
       --<a href="#tag">tag</a> &lt;name&gt;
-      --<a href="#tag">frame-tag</a> &lt;name&gt;       Include tagged frames in the sheet
-      --<a href="#frame-range">frame-range</a> from,to    Only export frames in the [from,to] range
-      --<a href="#ignore-empty">ignore-empty</a>           Do not export empty frames/cels
-      --<a href="#merge-duplicates">merge-duplicates</a>       Merge all duplicate frames into one in the sprite sheet
-      --<a href="#border-padding">border-padding</a> &lt;value&gt; Add padding on the texture borders
-      --<a href="#shape-padding">shape-padding</a> &lt;value&gt;  Add padding between frames
-      --<a href="#inner-padding">inner-padding</a> &lt;value&gt;  Add padding inside each frame
-      --<a href="#trim">trim</a>                   Trim whole sprite for --save-as
-                               or individual frames for --sheet
-      --<a href="#trim-sprite">trim-sprite</a>            Trim the whole sprite (for --save-as and --sheet)
-      --<a href="#trim-by-grid">trim-by-grid</a>           Trim all images by its correspondent grid boundaries before exporting
-      --<a href="#extrude">extrude</a>                Extrude all images duplicating all edges one pixel
-      --<a href="#crop">crop</a> x,y,width,height  Crop all the images to the given rectangle
-      --<a href="#slice">slice</a> &lt;name&gt;           Crop the sprite to the given slice area
-      --<a href="#filename-format">filename-format</a> &lt;fmt&gt;  Special format to generate filenames
-      --<a href="#tagname-format">tagname-format</a> &lt;fmt&gt;   Special format to generate tagnames in JSON data
-      --<a href="#script">script</a> &lt;filename&gt;      Execute a specific script
+      --<a href="#tag">frame-tag</a> &lt;name&gt;       在表中包含被标记的帧
+      --<a href="#frame-range">frame-range</a> from,to    只导出在[from,to]范围内的帧
+      --<a href="#ignore-empty">ignore-empty</a>           不导出空帧或赛璐珞
+      --<a href="#merge-duplicates">merge-duplicates</a>       合并精灵表中的重复帧
+      --<a href="#border-padding">border-padding</a> &lt;value&gt; 在纹理边界添加边距
+      --<a href="#shape-padding">shape-padding</a> &lt;value&gt;  在帧之间添加边距
+      --<a href="#inner-padding">inner-padding</a> &lt;value&gt;  在每个帧内添加边距
+      --<a href="#trim">trim</a>                   对于 --save-as 剪裁整个精灵，对于 --sheet，剪裁独立帧
+      --<a href="#trim-sprite">trim-sprite</a>            剪裁整个精灵 (对于 --save-as 和 --sheet)
+      --<a href="#extrude">extrude</a>                挤压所有图像重复边界为 1 像素
+      --<a href="#crop">crop</a> x,y,width,height  修剪所有图像到指定的矩形
+      --<a href="#slice">slice</a> &lt;name&gt;           修剪精灵到指定的切片区域
+      --<a href="#filename-format">filename-format</a> &lt;fmt&gt;  生成文件名的特殊格式
+      --<a href="#tagname-format">tagname-format</a> &lt;fmt&gt;   生成 JSON 数据标签名的特殊格式
+      --<a href="#script">script</a> &lt;filename&gt;      执行指定的脚本
       --<a href="#script-param">script-param</a> name=value
-                               Parameter for a script executed from the
-                               CLI that you can access with app.params
-      --<a href="#list-layers">list-layers</a>            List layers of the next given sprite
-                               or include layers in JSON data
-      --<a href="#list-tags">list-tags</a>              List tags of the next given sprite sprite
-                               or include frame tags in JSON data
-      --<a href="#list-slices">list-slices</a>            List slices of the next given sprite sprite
-                               or include slices in JSON data
-      --<a href="#oneframe">oneframe</a>               Load just the first frame
-  -v, --<a href="#verbose">verbose</a>                Explain what is being done
-      --<a href="#debug">debug</a>                  Extreme verbose mode and copy log to desktop
-  -?, --<a href="#help">help</a>                   Display this help and exits
-      --<a href="#version">version</a>                Output version information and exit
+                               CLI 执行脚本的才输，其中包含 app.params
+      --<a href="#list-layers">list-layers</a>            列出给定精灵的图层或 JSON 数据包含的图层
+      --<a href="#list-tags">list-tags</a>              列出给定精灵的标签或 JSON 数据包含的帧标签
+      --<a href="#list-slices">list-slices</a>            列出给定精灵的切片或 JSON 数据包含的切片
+      --<a href="#oneframe">oneframe</a>               加载第一帧
+  -v, --<a href="#verbose">verbose</a>                解释当前正在执行的
+      --<a href="#debug">debug</a>                  详细信息模式并复制日志到桌面
+  -?, --<a href="#help">help</a>                   展示帮助并退出
+      --<a href="#version">version</a>                输出版本并退出
 </pre>
 
 ## --shell
