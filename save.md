@@ -1,24 +1,15 @@
-# Save
+# 保存
 
-You can save your sprite using the *File > Save* menu or pressing <kbd>Ctrl+S</kbd> (<kbd>⌘S</kbd> on macOS).
+你可以使用*File > Save*菜单或按下<kbd>Ctrl+S</kbd>（macOS 中为<kbd>⌘S</kbd>）来保存精灵。
 
-We highly recommend you to save your sprites in the
-[.aseprite](files.md#aseprite) format, so you keep the full sprite
-information intact ([layers](layers.md), [frames](frames.md),
-etc.). But you can save your sprite as other file types if you don't
-need all this information. For example, you can [open](open.md) a
-`.png` file, editing it, and save it again as `.png` (without using
-the `.aseprite` format).
+我们强烈建议你保存精灵为[.aseprite](files.md#aseprite)格式，这样你可以保持精灵信息完整（[图层](layers.md)，[帧](frames.md)，等等）。但是如果你并不需要保存所有信息，你可以保存精灵为其它文件类型。比如，你可以[打开](open.md)一个`.png`文件，编辑，然后再次保存为`.png`文件（没有使用`.aseprite`格式）。
 
-## Export
+## 导出
 
-If you want to export your sprite as a `.png` file or a `.gif`
-animation, you can use the *File > Export* option. See the
-[Exporting](/docs/exporting/) section for more information.
+如果你想导出精灵为一个`.png`文件或`.gif`动画，你可以使用*File > Export*。参见[导出](/docs/exporting/)章节以获得更多信息。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Open](open.md) |
-[Exporting](exporting.md)
+[打开](open.md) | [导出](exporting.md)
