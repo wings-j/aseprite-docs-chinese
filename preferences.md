@@ -1,113 +1,42 @@
-# Preferences
+# 偏好
 
-You can change the configuration of Aseprite from the *Edit >
-Preferences* menu or pressing <kbd>Ctrl+K</kbd> key (or <kbd>⌘K</kbd>
-or <kbd>⌘,</kbd> on macOS). In case that you are looking to configure
-the keyboard shorcuts, that's done through
-the *Edit > [Keyboard Shortcuts](keyboard-shortcuts.md)* menu option.
+你可以在*Edit > Preferences*菜单或按下<kbd>Ctrl+K</kbd>按键（或者 maxOS 中<kbd>⌘K</kbd>
+或<kbd>⌘,</kbd>）来改变 Aseprite 配置。如果你想要配置键盘快捷键，可以通过*Edit > [Keyboard Shortcuts](keyboard-shortcuts.md)*菜单选项。
 
-The Preferences dialog is divided in several sections:
+偏好对话框被分为多个章节：
 
-## General
+## 常用
 
-* **Screen Scaling**: Changes the size of each pixel inside every
-  window of Aseprite. It's 200% by default, which means that each
-  pixel in the window will be represented with a 2x2 square on the
-  screen. When using large monitors (e.g. 4K monitors) you can try
-  changing to 300% or 400%. If you want to see each pixel of your
-  sprite represented as one pixel on the screen, you should set this
-  option to 100%, in this case it's highly probable that you will want
-  to increase the next option (*UI Elements Scaling*) to 200% or more
-  if needed.
-* **UI Elements Scaling**: It's an extra scale applied only to elements
-  of the User Interface (buttons, labels, etc.), but without modifying
-  the scale of the sprite editor. It's 100% by default.
-* **Light** | **Dark** options: Since v1.3 you can quickly change between
-  a Light version of the Aseprite theme, and a Dark one.
-* **Language**: The language of the User Interface, English by default,
-  but you can get some translations contributed by users from:
-  https://github.com/aseprite/languages
-* **Show Aseprite menu bar** (only available on macOS): The [Aseprite
-  menu bar](menu-bar.md) is visible by default on Windows and Linux:
+- **屏幕缩放**：改变 Aseprite 的每个窗口的每个像素的尺寸。默认是 200%，即每个窗口的像素在屏幕上像是为 2x2 的正方形。如果使用更大的显示器（比如 4K 显示器），你可以尝试改变到 300% 或 400%。如果你想看到精灵的每个像素在你的屏幕上显示为 1 个像素，你应该设置这个选项为 100%。在这种情况下，你很有可能会想要提高下一个选项（_UI Elements Scaling_）到 200% 或更高。
+- **UI 元素缩放**：这是一个对用户界面（按钮、标签等）元素的额外缩放，但是不会改变精灵编辑器的缩放。默认为 100%。
+- **语言**：用户界面的语言，默认为英语，但是你能获得一些由用户贡献的翻译：[https://github.com/aseprite/languages](https://github.com/aseprite/languages)
+- **与 Aseprite 开发者分享崩溃信息**：当 Aseprite 崩溃（意外关闭）时，你会被询问是否愿意在将来自动私密地分享一些崩溃信息给 Aseprite 团队。Aseprite 不会默认这么做（这个选项默认不勾选），所以你必须共享此消息。更多的细节可见[#2857](https://github.com/aseprite/aseprite/issues/2857)。
 
-    ![Aseprite Menu Bar](menu-bar/aseprite-menubar.png)
+## 警告
 
-  But it's hidden by default on macOS, as in macOS you can use the
-  system menu bar:
+Aseprite 上一些（不可撤销的）的行为显示一个警告消息，并有一个*Don't show this alert again*选框：
 
-    ![macOS Menu Bar](menu-bar/macos-menubar.png)
+![警告示例](preferences/show-alert.png)
 
-* **Expand menu bar items on mouseover**: With this option checked,
-  when the mouse is above the [Aseprite menu bar](menu-bar.md), a menu
-  will be opened automatically. By default this is disabled, so you
-  have to click a menu to open it.
-* **Draw a separation between each palette entry**:
-* **Share crash data with Aseprite developers**: When Aseprite crashes
-  (unexpectedly closes) you will be asked to share some crash
-  information automatically in the future privately with the Aseprite
-  team. Aseprite doesn't do this by default (this option is unchecked
-  by default), so you have to give your consent to share this
-  information.  More details in
-  [#2857](https://github.com/aseprite/aseprite/issues/2857)
+你可以在*Edit > Preferences > Alerts*重新打开这些对话框警告
 
-## Alerts
+## 编辑器
 
-Several (non-undoable) actions on Aseprite show a warning message with
-a *Don't show this alert again* checkbox:
+改变[精灵编辑器](sprite-editor.md)的一般行为的选项：
 
-![Alert example](preferences/show-alert.png)
-
-You can re-enable these dialogs from *Edit > Preferences > Alerts*.
-
-## Editor
-
-Options to change the general behavior of the [Sprite Editor](sprite-editor.md):
-
-* **Zoom with scroll wheel**: Checked by default, you zoom with the
-  [mouse wheel](mouse-wheel.md) (if you uncheck this, the vertical scroll will be the
-  default action for the mouse wheel).
-* **Zoom sliding two fingers up or down**: This is available on macOS
-  only, and if you enable it you will be able to zoom using two
-  fingers on your MacBook trackpad.
-* **Zoom from center with scroll wheel**: Check this if you want to
-  [zoom](zoom.md) from the center of the sprite editor instead zooming
-  from the mouse position when the mouse wheel is used.
-* **Zoom from center with keys**: Zoom from the center of the sprite
-  instead of the mouse position when you use the keys
-  [to zoom](zoom.md) <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, etc.
-* **Show scroll-bars in sprite editor**: Uncheck this to hide the
-  scroll bars on all sprite editors.
-* **Auto-scroll on editor edges**: With this option checked, when you
-  are [drawing](drawing.md) (have the mouse button pressed) and the
-  mouse touches the edges of the sprite editor, it will scrolls
-  automatically.
-* **Auto-fit on screen when a sprite is opened**: When it's checked,
-  after you create a new sprite or open an existing one, the editor
-  will show the whole image fitting it in the available space of the
-  canvas. When this option is unchecked (the default option), the
-  initial zoom level will be 100% by default.
-* **Preview straight line immediately on Pencil tool**: When you use
-  the ![Pencil icon](tools/pencil-tool.png) Pencil tool, pressing
-  the <kbd>Shift</kbd> key will draw a straight line from the last painted
-  point. With this option checked, you will see the line preview
-  immediately after pressing the <kbd>Shift</kbd> key (instead of
-  waiting for the mouse button). If this is too annoying for you, you
-  can uncheck the option.
-* **Discard custom brush when eyedropper is used**: If you create a
-  custom brush with *Edit > New Brush* option, using the eyedropper
-  ![Eyedropper tool icon](tools/eyedropper-tool.png) tool will change
-  the color of your brush. Checking this option, after picking a color
-  with the eyedropper, the custom brush will be completely discarded
-  and a regular brush with the picked color will be selected.
-* **Downsampling**: The algorithm to use to show the sprite when the
-  zoom level is <= 50%. By default it's *Bilinear mipmapping*.
-* **Right-click**: You can customize what specific action to do with
-  the [right-click](right-click.md).
+- **使用滚轮缩放**：默认勾选，使用滚轮缩放（如果你勾选这个，鼠标滚轮的默认行为是垂直缩放）。
+- **鼠标滚轮中心缩放**：勾选这个选项后，使用鼠标滚轮[缩放](zoom.md)时，以精灵编辑器的中心为原点缩放而不是鼠标位置。
+- **按键中心缩放**：使用<kbd>1</kbd>、<kbd>2</kbd>、<kbd>3</kbd>等[缩放](zoom.md)时，以精灵编辑器的中心为原点缩放而不是鼠标位置。
+- **在精灵编辑器显示滚动条**：取消勾选可以隐藏所有精灵编辑器的滚动条。
+- **编辑器边缘自动滚动**：勾选这个选项后，当你[绘图](drawing.md)（鼠标按下）时，如果鼠标接触精灵编辑器的边缘，它会自动滚动。
+- **精灵打开时自动适配屏幕**：勾选这个选项后，在你创建一个新精灵或打开一个现有的时，编辑器会在画布的可用空间内适配整个图像。当这个选项没勾选时（默认选项），默认初始缩放等级是 100%。
+- **使用铅笔工具时即时预览**：当你使用![铅笔图标](tools/pencil-tool.png)铅笔工具时，按下<kbd>Shift</kbd>会从上一个绘画点画一条直线。当这个选项勾选时，你会在按下<kbd>Shift</kbd>（而不是鼠标按键）后立即看到直线预览。如果你这困扰到你，你可以取消勾选这个选项。
+- **使用吸管时不使用自定义笔刷**：如果你用*Edit > New Brush*创建了自定义笔刷，用吸管![吸管工具图标](tools/eyedropper-tool.png)工具会改变笔刷的颜色。勾选这个选项后，在用吸管选择一个颜色后，自定义笔刷会被完全放弃，替换为使用被选择颜色的常规笔刷。
+- **缩减采样**：缩放等级 <= 50% 时使用的算法。默认使用 _Bilinear mipmapping_。
+- **右键点击**：你可以自定义[右键点击](right-click.md)的行为。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Preferences Folder](preferences-folder.md) |
-[Reset Preferences](reset-preferences.md) |
-[Customization](customization.md)
+[偏好文件夹](preferences-folder.md) | [重置偏好](reset-preferences.md) | [自定义](customization.md)
