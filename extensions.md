@@ -1,35 +1,24 @@
-# Extensions
+# 扩展
 
-Since **[Aseprite v1.2-beta10](https://www.aseprite.org/release-notes/#aseprite-v1-2-beta10)**
-you can add/remove extensions to/from Aseprite. Extensions are
-distributed as `.aseprite-extension` (`.zip`) files and you can
-manage them from *Edit > Preferences > Extensions*:
+从**[Aseprite v1.2-beta10](https://www.aseprite.org/release-notes/#aseprite-v1-2-beta10)**之后，你可以在 Aseprite 添加和移除扩展。扩展通过`.aseprite-extension`（`.zip`）文件分发，你可以在 *Edit > Preferences > Extensions*管理它们：
 
-![Extensions in Preferences](extensions/extensions.png)
+![偏好中的扩展](extensions/extensions.png)
 
-## Add/Remove Extensions
+## 添加和移除扩展
 
-In *Edit > Preferences > Extensions* there is a "Add Extension"
-button. You can use it to select a `.aseprite-extension` or `.zip`
-file.  After installing the extension it will be uncompressed in your
-[configuration directory](preferences-folder.md) inside the
-`extensions` subfolder.
+在*Edit > Preferences > Extensions*有一个“添加扩展”按钮。你可以使用它选择一个`.aseprite-extension`或`.zip`文件。安转了扩展后，它会在[配置文件夹](preferences-folder.md)的`extensions`子文件夹中解压缩。
 
-## File Content
+## 文件内容
 
-An extension/plugin is exactly the same as a `.zip` file but you can
-rename the file extension to `.aseprite-extension` so the user can
-double-click it in Windows Explorer or macOS Finder.
+一个扩展或插件就是一个`.zip`文件，但是你可以把它的扩展名更改为`.aseprite-extension`，这样用户就可以在 Windows Explorer 或 macOS Finder 中双击它。
 
-The content of the `.zip` file varies depending on the kind of
-extension that you want to create, but at least they must contain one
-file inside: the `package.json` file.
+`.zip`文件的内容根据你想创建的扩展类型而变更，但它们一定会包含`package.json`文件。
 
-The structure of a `.aseprite-extension` file depends on the kind of extension:
+一个`.aseprite-extension`文件的结构取决于扩展种类：
 
-* [Keys](extensions/keys.md)
-* [Palettes](extensions/palettes.md)
-* [Languages](extensions/languages.md)
-* [Themes](extensions/themes.md)
-* [Dithering Matrices](extensions/dithering-matrices.md)
-* [Plugins with Scripts](https://github.com/aseprite/api/blob/master/api/plugin.md#plugin)
+- [按键](extensions/keys.md)
+- [调色板](extensions/palettes.md)
+- [语言](extensions/languages.md)
+- [驻地](extensions/themes.md)
+- [抖动矩阵](extensions/dithering-matrices.md)
+- [脚本插件](https://github.com/aseprite/api/blob/master/api/plugin.md#plugin)
