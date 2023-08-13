@@ -1,36 +1,29 @@
-# Cel
+# 赛璐珞
 
-A cel (from [celluloid](http://en.wikipedia.org/wiki/Cel)) is one
-image in a specific frame and layer, at a specific *xy*-coordinate in
-the canvas.
+赛璐珞（来自[celluloid](http://en.wikipedia.org/wiki/Cel)）是一个帧或图层中的图像，在画布中的特性*XY*坐标位置。
 
 ![Cel on Timeline](cel/cel-on-timeline.png)
 
-The difference between a frame and a cel, is that a frame is the set of
-cels for all layers in a specific time:
+帧和赛璐珞的区别是：帧是在特定时间点上，所有图层的一组赛璐珞。
 
 ![Frame on Timeline](cel/frame-on-timeline.png)
 
-## Move a Cel
+## 移动赛璐珞
 
-You can use the [Move tool](move-tool.md) to drag-and-drop the current
-cel in the canvas. Or you can use the [Timeline to move the cel](move-cels.md) to
-other layer/frame position.
+你可以在画布中使用[移动工具](move-tool.md)来拖放当前赛璐珞。或者你可以使用[时间线来移动赛璐珞](move-cels.md)到其它图层或帧的位置。
 
-## Change Opacity
+## 改变不透明度
 
-On [RGB](color-mode.md#rgb) images each cel has its own opacity
-level. You can use the slider at the status bar to modify its opacity:
+在[RGB](color-mode.md#rgb)图像中每个像素都有自己的不透明度等级，你可以用状态栏上的滑块来更改。
 
 ![Cel Opacity](cel/cel-opacity.gif)
 
-You can do the same right-clicking a cel and selecting *Properties* option (or *Frame > Cel Properties* menu):
+也可以右键点击一个赛璐珞并选择*Properties*（或者*Frame > Cel Properties*菜单）。
 
 ![Cel Properties](cel/cel-properties.gif)
 
-----
+---
 
 **SEE ALSO**
 
-[Linked Cels](linked-cels.md) |
-[Timeline](timeline.md)
+[链接的赛璐珞](linked-cels.md) | [时间线](timeline.md)
