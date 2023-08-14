@@ -24,6 +24,6 @@
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [链接的赛璐珞](linked-cels.md) | [时间线](timeline.md)
