@@ -1,56 +1,41 @@
-# Color Mode
+# 颜色模式
 
-Aseprite supports three different kinds of color modes:
+Aseprite 支持 3 中不同的颜色模式：
 
-* RGB
-* Indexed
-* Grayscale
+- RGB
+- 索引
+- 灰度
 
-When you create a [new sprite](new-sprite.md) you have to choose one of these color
-modes. In this section you will see the details of each one.
+当你创建一个[新精灵](new-sprite.md)，你需要从这些颜色模式中选择一种。在这一节中，你会看到每一个颜色模式的细节。
 
 ## RGB
 
 ![RGB Mode](color/rgb-mode.png)
 
-RGB, or RGBA, stands for Red-Green-Blue-Alpha. Each image pixel
-contains these four components. It means that a pixel is completely
-independent from others.
+RGB 或者 RGBA，代表红-绿-蓝-阿尔法。每个图像像素包含 4 个组分，也就是说每个元素都是完全独立于其它像素的。
 
-The alpha component specifies how opaque the color is:
-`Alpha = 255` means completely opaque, and `Alpha = 0` completely
-transparent.
+阿尔法组分表示颜色的不透明图：`A = 255`表示完全不透明，`A = 0`表示完全透明。
 
-Special note: Background layer doesn't have an alpha component, so
-it will always be opaque.
+特别注意：背景图层不含有阿尔法组分，随意它总是不透明的。
 
-## Indexed
+## 索引
 
 ![Indexed Mode](color/indexed-mode.gif)
 
-In this mode each pixel has a number that references a palette
-color. Your palette can contain up to 256 colors, and each pixel
-points to one of those colors (from 0 to 255).
+这个模式中，每个像素有一个索引值，引用调色板中的一个颜色。你的调色板可以包含最多 256 种颜色，所以每个像素点指向其中一个颜色（从 0 到 255）。
 
-Unlike RGBA, if you modify the palette color, all pixels that are
-referencing that color will change their appearance.
+与 RGBA 不同的是，如果你修改调色板颜色，所有引用这个颜色的像素也将改变。
 
-An important concept on Indexed images is that for transparent layers,
-we need a special index to act as the transparent color.
-Generally this index is 0, but you can change it
-from *Sprite > Properties* menu.
+索引模式图像的透明图层有一个重要的概念，就是我们需要一个特殊的索引值来表示透明颜色。通常这个索引是 0，但你可以用*Sprite > Properties*菜单来修改。
 
-## Grayscale
+## 灰度
 
 ![Grayscale Mode](color/gray-mode.png)
 
-It's more like RGBA, just that you have two channels: Value and Alpha.
-Here 0 means black and 255 is white. The alpha channel behaves exactly
-like it does in RGBA mode.
+它更像 RGBA，只是你只有两个通道：值和阿尔法。此时 0 表示黑色，而 255 表示白色。阿尔法通道表现得和在 RGBA 模式中的一致。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Color](color.md) |
-[New Sprite](new-sprite.md)
+[颜色](color.md) | [新精灵](new-sprite.md)

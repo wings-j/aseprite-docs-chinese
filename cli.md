@@ -81,10 +81,9 @@
 
 ## --shell
 
-Executes Aseprite in a
-[REPL mode](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You
-can write JavaScript code in this mode. There are plans for a
-[specific API](https://github.com/aseprite/api-draft) for future version.
+[REPL 模式](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)运行 Aseprite。在这个模式中，你可以写 Javascript 代码。未来版本，将会更新一个[特定 API](https://github.com/aseprite/api-draft)。
+
+// TODO
 
 ## --batch
 
