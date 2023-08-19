@@ -1,31 +1,20 @@
-# Continuous Layers
+# 连续图层
 
-The continuous icon ![Broken layer icon](continuous-layers/broken-layer.png) indicates what kind
-of [cels](cel.md) you prefer when they are copied.
-It modifies the behavior of certain commands like
-[New Frame](new-frame.md),
-[Copy Frames](copy-frames.md), or [Copy Cels](copy-cels.md).
+连续图标![Broken layer icon](continuous-layers/broken-layer.png)表示你复制[赛璐珞](cel.md)时你倾向的类型。它变更特定命令的行为，比如[新帧](new-frame.md)、[复制帧](copy-frames.md)或者[复制赛璐珞](copy-cels.md)。
 
-There are two possible states:
+有两种可能的状态：
 
-1. ![Normal layer icon](continuous-layers/broken-layer.png) This layer is a normal layer (with discontinuous cels): new cels will be created unlinked (cels are copied).
-1. ![Continuous layer icon](continuous-layers/continuous-layer.png) This layer is continuous: new cels are created in a [linked way](linked-cels.md).
+1. ![Normal layer icon](continuous-layers/broken-layer.png)图层是普通图层（有不连续的赛璐珞）：新赛璐珞被创建（或被复制）时互相不链接。
+2. ![Continuous layer icon](continuous-layers/continuous-layer.png)图层是连续图层：新赛璐珞被创建时互相[链接](linked-cels.md)。
 
-Generally you will prefer continuous cels for [background layers](layers.md#background-layer) (with static content),
-and discontinuous mode in layers that have a different cel on each frame:
+一般来说，对于背景图层，你可能更倾向于连续赛璐珞，但对于在每一帧上有不同赛璐珞的不连续图层，不连续赛璐珞更好：
 
 ![Continuous vs normal layer](continuous-layers/cont-vs-dis.png)
 
-This option can be switched depending on the specific situation you
-are working on. Modifying the option doesn't change current cels,
-so it only affects future operations.
+这个选项可以根据你工作的状态进行切换。切换这个选项不会改变当前赛璐珞，所以它只影响未来的操作。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Linked Cels](linked-cels.md) |
-[Layers](layers.md) |
-[New Frame](new-frame.md) |
-[Copy Frames](copy-frames.md) |
-[Timeline](timeline.md)
+[链接赛璐珞](linked-cels.md) | [图层](layers.md) | [新帧](new-frame.md) | [复制帧](copy-frames.md) | [时间线](timeline.md)
