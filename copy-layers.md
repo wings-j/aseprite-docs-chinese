@@ -1,17 +1,16 @@
-# Copy Layers
+# 复制图层
 
-Use the [timeline](timeline.md) to copy layers:
+使用[时间线](timeline.md)复制图层：
 
 ![Copy layers](copy-layers/copy-layers.gif)
 
-1. Select a range of layers you want to copy.
-2. Move the mouse to the selection border.
-3. Hold <kbd>Ctrl</kbd> or <kbd>Alt</kbd> key and start dragging.
-4. Drop the copy where you want, holding <kbd>Ctrl</kbd> or <kbd>Alt</kbd> keys.
+1. 选择你想复制的图层。
+2. 移动鼠标到选区边缘。
+3. 按住<kbd>Ctrl</kbd>或<kbd>Alt</kbd>并拖动。
+4. 在你想复制的位置放下。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Move Layers](move-layers.md) |
-[Timeline](timeline.md)
+[移动图层](move-layers.md) | [时间线](timeline.md)

@@ -1,22 +1,20 @@
-# Copy Frames
+# 复制帧
 
-Use the [timeline](timeline.md) to copy frames:
+使用[时间线](timeline.md)复制帧：
 
 ![Copy frames](copy-frames/copy-frames.gif)
 
-1. Select a range of frames you want to copy.
-2. Move the mouse to the selection border.
-3. Hold <kbd>Ctrl</kbd> or <kbd>Alt</kbd> key and start dragging.
-4. Drop the copy where you want, holding <kbd>Ctrl</kbd> or <kbd>Alt</kbd> keys.
+1. 选择你想复制的帧。
+2. 移动鼠标到选区边缘。
+3. 按住<kbd>Ctrl</kbd>或<kbd>Alt</kbd>并拖动。
+4. 在你想复制的位置放下。
 
-Note that you can copy frames beyond the end of the animation, extending it.
+注意，你可以复制帧到动画的末尾后，并扩展动画。
 
-When copying frames on a [continuous layer](continuous-layers.md), copied cels will be [linked](linked-cels.md) to the original ones.
+当在[连续图层](continuous-layers.md)中复制帧时，复制的帧会被原本的帧相[链接](linked-cels.md)。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Move Frames](move-frames.md) |
-[Copy Cels](copy-cels.md) |
-[Timeline](timeline.md)
+[移动帧](move-frames.md) | [复制赛璐珞](copy-cels.md) | [时间线](timeline.md)
