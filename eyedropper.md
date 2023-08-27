@@ -1,38 +1,27 @@
-# Eyedropper
+# 吸管
 
-The Eyedropper tool ![Eyedropper Tool Icon](tools/eyedropper-tool.png)
-is useful to pick colors from the image itself. It can be activated
-moving the mouse on the Eraser icon in the toolbar:
+吸管工具![Eyedropper Tool Icon](tools/eyedropper-tool.png)可以从图像中选择颜色，它可以通过将鼠标移动到工具栏的橡皮擦图标上来激活。
 
 ![Eraser and Eyedropper group](eyedropper/eyedropper-group.png)
 
-Alternatively you can activate it pressing the `I` key or `Alt+click`.
-Using `Left click` will pick the color and store it as the
-[Foreground color](color-bar.md#foreground-color), using
-the `Right click` it will be stored as
-the [Background color](color-bar.md#background-color).
+或者你可以通过按下`I`或`Alt+点击`来激活。使用`左键`会选择颜色并储存到[前景色](color-bar.md#foreground-color)，使用`右键`则会保存到[背景色](color-bar.md#background-color)。
 
-You have some extra options in the [context bar](context-bar.md):
+在[上下文栏](context-bar.md)中有一些额外的选项：
 
-* Options to pick HSV or HSL values instead of RGB values:
+- 选择 HSV 或者 HSL 值而不是 RGB 值：
 
   ![Pick options](eyedropper/pick-options.png)
 
-* Pick colors from the *All Layers* (the composition of layers), the
-  *Current Layer* only without composition (ignoring the layer
-  blending modes), or *First Reference Layer* to pick colors from the
-  first reference layer that is found.
+- 从*所有图层*（图层的组合）选择颜色、仅*当前图层*而没有组合（忽略图层混合模式）、_第一参考图层_（第一个找到的参考图层）选择颜色。
 
   ![Sample options](eyedropper/sample-options.png)
 
-## Pick colors with right click
+## 用右键选择颜色
 
-You can configure the `Right click` to pick colors from
-[Edit > Preferences > Editor](right-click.md).
+你可以在[Edit > Preferences > Editor](right-click.md)配置使用`右键`选择颜色。
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Color bar](color-bar.md) |
-[Right-click](right-click.md)
+[颜色栏](color-bar.md) | [右键](right-click.md)
