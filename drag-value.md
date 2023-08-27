@@ -1,26 +1,17 @@
-# Drag Value
+# 拖动值
 
-Since **v1.3-beta12**, from *Edit > Keyboard Shortcuts > Drag Value*,
-you can configure a key to be pressed and move/drag the mouse in a
-specific direction (e.g. left/right or up/down) to change a specific
-value/parameter inside Aseprite until you release the key.
+从**v1.3-beta12**开始，在*Edit > Keyboard Shortcuts > Drag Value*可以配置一个按键，当这个按键被按下并沿一个特定方向（比如左/右或上/下）移动/拖动鼠标时，你可以更改一个 Aseprite 的特定值/参数，直到你松开按键。
 
-By default, <kbd>Ctrl+Alt</kbd> is configured in such a way to
-increase/decrease the Brush Size moving the mouse from left to
-right/right to left:
+默认情况下，<kbd>Ctrl+Alt</kbd>就是这样的一个按键，通过从左至右或从右至左移动鼠标，可以增大或减小笔刷尺寸：
 
 ![Drag Value Section](preferences/drag-value.png)
 
-The controls at the bottom indicates the direction of the increment
-(right) and the distance of pixels (4) that the mouse must travel to
-increment one unit (in this case one unit of the Brush Size).
+底部的控件表明增大的方向（右），并且鼠标必须移动至少 4 个像素才能使值上升 1 个单位（在这个例子中时笔刷尺寸）/
 
 ![Controls](preferences/drag-options.png)
 
 ---
 
-**SEE ALSO**
+**参见**
 
-[Mouse Wheel](mouse-wheel.md) |
-[Keyboard Shortcuts](keyboard-shortcuts.md) |
-[Issue #3195](https://github.com/aseprite/aseprite/issues/3195)
+[鼠标滚轮](mouse-wheel.md) | [键盘快捷键](keyboard-shortcuts.md) | [Issue #3195](https://github.com/aseprite/aseprite/issues/3195)
