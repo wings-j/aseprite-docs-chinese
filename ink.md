@@ -3,7 +3,7 @@
 <img src="/docs/ink/inks.png" alt="Inks" class="x2" />
 
 The ink modifies the way the [active tool](tool-bar.md) paints. The
-default ink is the *Simple Ink*.
+default ink is the _Simple Ink_.
 
 ## Simple Ink
 
@@ -49,7 +49,7 @@ special ink for pixel-art.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Drawing](drawing.md) |
 [Shading](shading.md)

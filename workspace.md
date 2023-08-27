@@ -13,7 +13,7 @@ the [tool bar](tool-bar.md). The [status bar](status-bar.md) also gives you valu
 information about the current sprite.
 
 The timeline is not visible by default, you can make it visible with the
-*View > Timeline* menu option or <kbd>Tab</kbd> key. (It also pops up
+_View > Timeline_ menu option or <kbd>Tab</kbd> key. (It also pops up
 automatically when you add a new frame or a new layer.)
 
 ## Drag and drop tabs
@@ -26,7 +26,7 @@ with the <kbd>Left Mouse Button</kbd>:
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Color Bar](color-bar.md) |
 [Context Bar](context-bar.md) |

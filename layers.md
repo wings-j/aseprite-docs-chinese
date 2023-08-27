@@ -62,6 +62,6 @@ _Layer > Convert To > Layer_ menu.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [时间线](timeline.md) | [连续图层](continuous-layers.md) | [移动工具](move-tool.md)

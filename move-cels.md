@@ -14,12 +14,12 @@ case new empty frames are created automatically.
 
 ## Canvas Position
 
-You can move the cel canvas position (*x* and *y* coordinates) using
+You can move the cel canvas position (_x_ and _y_ coordinates) using
 the [Move tool](move-tool.md) ![Move tool icon](tools/move-tool.png).
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Copy Cels](copy-cels.md) |
 [Move Frames](move-frames.md) |

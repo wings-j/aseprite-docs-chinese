@@ -11,7 +11,7 @@ Use the [timeline](timeline.md) to move frames:
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Copy Frames](copy-frames.md) |
 [Move Cels](move-cels.md) |

@@ -52,7 +52,7 @@ While RotSprite is widely accepted as an algorithm producing better results, the
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Flip](flip.md) |
 [Resize](resize.md) |

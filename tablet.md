@@ -8,17 +8,17 @@ can configure what API do you prefer to use:
 
 ![Tablet section](tablet/tablet.png)
 
-* *Windows 8/10 Pointer API*: This option might be enough for most
+- _Windows 8/10 Pointer API_: This option might be enough for most
   modern devices, you can give a try how your tablet works with this
   (might work better with this option than with Wintab)
-* *[Wintab](wintab.md)*: This is the default option at the moment to
+- _[Wintab](wintab.md)_: This is the default option at the moment to
   support pressure sensitivity on older systems (Windows Vista/7) and
   older devices.
-* *Wintab (direct packet processing)*: This option might not work well
+- _Wintab (direct packet processing)_: This option might not work well
   in some devices, but might be useful in other devices to avoid
   losing packets and getting smoother strokes.
 
-Pressing the *OK*/*Apply* buttons will change the tablet settings
+Pressing the _OK_/_Apply_ buttons will change the tablet settings
 immediately, there is no need to restart the program.
 
 ## Linux/X11
@@ -41,10 +41,12 @@ v1.2.35** you can try to do these steps:
 5. Search the `[general]` section and add the name of your stylus in a
    `x11_stylus_id` option (the name must appears just like in the
    first column of the `xinput --list` output):
+
 ```
 [general]
 x11_stylus_id = Your Stylus Name
 ```
+
 6. Save the file and start Aseprite
 
 Please inform us if this does work for your case adding a new comment
@@ -53,7 +55,7 @@ indicating the name of your device.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Wintab](wintab.md) |
 [Troubleshooting](troubleshooting.md)

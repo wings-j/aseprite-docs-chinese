@@ -1,7 +1,7 @@
 # Keys
 
 Since **Aseprite v1.2.35** you can create extensions with keyboard
-shortcuts.  The content of a `.aseprite-extension` file for an
+shortcuts. The content of a `.aseprite-extension` file for an
 extension with keyboard shorcuts should be something like this:
 
 ```
@@ -49,6 +49,6 @@ can be created / exported from [Edit > Keyboard Shortcuts](keyboard-shortcuts.md
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Extensions](extensions.md)

@@ -1,12 +1,12 @@
 # Reverse Frames
 
 You can reverse frames selecting a range of frames in the
-[timeline](timeline.md) and using the *Frame > Reverse Frames* menu
+[timeline](timeline.md) and using the _Frame > Reverse Frames_ menu
 option.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Animation](animation.md) |
 [Timeline](timeline.md)

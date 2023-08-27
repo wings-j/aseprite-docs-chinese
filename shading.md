@@ -29,7 +29,7 @@ Or you can use right click to move colors to the right:
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Drawing](drawing.md) |
 [Ink](ink.md)

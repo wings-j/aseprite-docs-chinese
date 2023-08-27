@@ -44,9 +44,9 @@ The given `"path"` property is a directory (generally `.` which means
 the same directory where the `package.json` file is located), and this
 directory must contain a set of files:
 
-* [`theme.xml`](#theme-xml)
-* [`sheet.png`](#sheet-png)
-* [`sheet.aseprite-data`](#sheet-aseprite-data)
+- [`theme.xml`](#theme-xml)
+- [`sheet.png`](#sheet-png)
+- [`sheet.aseprite-data`](#sheet-aseprite-data)
 
 ## theme.xml
 
@@ -89,8 +89,8 @@ ignored, and the `displayName` from the `package.json` file will be
 used in the UI.
 
 The `screenscaling="2"` is a way to specify the prefered default
-*"Edit > Preferences > General > Screen Scaling"* factor (2 means
-200%) and `uiscaling` the default *"UI Scaling"* factor (1 means 100%).
+_"Edit > Preferences > General > Screen Scaling"_ factor (2 means
+200%) and `uiscaling` the default _"UI Scaling"_ factor (1 means 100%).
 
 ### &lt;authors&gt;
 
@@ -213,6 +213,6 @@ be kept in sync with the slices):
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Extensions](extensions.md)

@@ -14,12 +14,12 @@ Or a range of cels:
 
 After selecting the range you can do several operations with it like:
 
-* [moving frames](move-frames.md) or [tagging frames](tags.md), or
-* [changing the order of layers](move-layers.md), or
-* [moving cels](move-cels.md).
+- [moving frames](move-frames.md) or [tagging frames](tags.md), or
+- [changing the order of layers](move-layers.md), or
+- [moving cels](move-cels.md).
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Timeline](timeline.md)

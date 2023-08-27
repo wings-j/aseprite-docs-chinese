@@ -14,11 +14,11 @@ will not be visible (and only the background layer can show the
 
 You can change the transparent color using middle mouse button in the
 [color bar](color-bar.md), or
-going to [*Sprite > Properties*](sprite-properties.md) menu option.
+going to [_Sprite > Properties_](sprite-properties.md) menu option.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Color](color.md) |
 [Color Mode](color-mode.md) |

@@ -40,6 +40,6 @@ Aseprite 有自己的文件格式来保存你的工作：`.aseprite`文件（或
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [保存](save.md) | [导出](exporting.md) | [偏好](preferences.md) | [Aseprite 文件格式规范](https://github.com/aseprite/aseprite/blob/main/docs/ase-file-specs.md)

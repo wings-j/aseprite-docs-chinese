@@ -11,7 +11,7 @@ Use the [timeline](timeline.md) to move layers:
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Copy Layers](copy-layers.md) |
 [Timeline](timeline.md)

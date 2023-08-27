@@ -16,7 +16,7 @@ In previous versions of Aseprite, we tried to load this Wintab library
 initially, but it could cause the program to crash randomly. Sometimes
 you can solve this reinstalling drivers, restarting Windows, using the
 Pointer API from [Tablet options](tablet.md), or just disabling Wintab
-usage from *Edit > Preferences > Tablet* (or from *Edit > Preferences > Experimental* in older versions):
+usage from _Edit > Preferences > Tablet_ (or from _Edit > Preferences > Experimental_ in older versions):
 
 ![Don't load the WinTab driver](wintab/disable-wintab.png)
 
@@ -49,7 +49,7 @@ On Steam you can add the `-disable-wintab` option in the Aseprite launch options
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Tablet](tablet.md) |
 [Troubleshooting](troubleshooting.md)

@@ -1,8 +1,8 @@
 # Reset Preferences
 
 Aseprite preferences are stored in a `aseprite.ini` file in the
-[configuration folder](preferences-folder.md). You can access this folder from *Edit >
-Preferences > Locate Configuration File*. To reset all configuration
+[configuration folder](preferences-folder.md). You can access this folder from _Edit >
+Preferences > Locate Configuration File_. To reset all configuration
 you can close Aseprite and delete all the files where `aseprite.ini` is located:
 
 ![Files in Preferences Folder](preferences/preffiles.png)
@@ -12,15 +12,16 @@ platform to reset the preferences manually.
 
 ## On Windows
 
-1. Close Aseprite
-1. Press the `Windows key + R` (or `Start menu > Run...` option).
-   This will show the dialog to run a program. Then you write:
+1.  Close Aseprite
+1.  Press the `Windows key + R` (or `Start menu > Run...` option).
+    This will show the dialog to run a program. Then you write:
 
-       %AppData%\Aseprite
+        %AppData%\Aseprite
 
-   And press `Enter` key.
-1. Delete the files in that folder (mainly `aseprite.ini`)
-1. Restart Aseprite
+    And press `Enter` key.
+
+1.  Delete the files in that folder (mainly `aseprite.ini`)
+1.  Restart Aseprite
 
 ## On macOS
 
@@ -39,14 +40,14 @@ platform to reset the preferences manually.
 1. Open a Terminal
 1. Write:
 
-       xdg-open ~/.config/aseprite
+   xdg-open ~/.config/aseprite
 
 1. Delete the files in that folder (mainly `aseprite.ini`)
 1. Restart Aseprite
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Troubleshooting](troubleshooting.md) |
 [Preferences](preferences.md) |

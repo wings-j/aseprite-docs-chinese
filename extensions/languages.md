@@ -32,6 +32,6 @@ Content of `package.json`:
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Extensions](extensions.md)

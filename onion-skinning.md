@@ -16,7 +16,7 @@ and configure other settings from the
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Animation](animation.md) |
 [Timeline](timeline.md)

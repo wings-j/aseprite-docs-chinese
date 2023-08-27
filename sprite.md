@@ -15,6 +15,6 @@
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [色彩模式](color-mode.md) | [保存](save.md) | [精灵尺寸](sprite-size.md)

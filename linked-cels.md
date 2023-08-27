@@ -1,6 +1,6 @@
 # Linked Cels
 
-Two cels are linked when they share their image and the *xy*-coordinate.
+Two cels are linked when they share their image and the _xy_-coordinate.
 Linked cels looks as follow in the [timeline](timeline.md):
 
 ![Linked Cels](linked-cels/linked-cels.png)
@@ -18,7 +18,7 @@ in a [continuous layer](continuous-layers.md)
 
 ## Unlink Cels
 
-There is a way to unlink cels using right-click and *Unlink* option in
+There is a way to unlink cels using right-click and _Unlink_ option in
 the timeline:
 
 ![Unlink Cels](linked-cels/unlink-cels.gif)
@@ -28,6 +28,6 @@ modify them the change will not be propagated to other cels.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Continuous Layers](continuous-layers.md)

@@ -17,11 +17,11 @@ On the sprite editor you can:
 
 ### Preferences
 
-You can customize the Sprite Editor behavior from [*Edit > Preferences > Editor*](preferences.md#editor).
+You can customize the Sprite Editor behavior from [_Edit > Preferences > Editor_](preferences.md#editor).
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Sprite](sprite.md) |
 [Timeline](timeline.md) |

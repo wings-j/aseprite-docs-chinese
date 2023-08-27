@@ -5,25 +5,25 @@ This is the timeline:
 <img src="/docs/timeline/timeline.png" alt="Timeline" class="xN" />
 
 It shows the [layers](layers.md) and frames of the active sprite. You can use the
-*View > Timeline* menu option or press the <kbd>Tab</kbd> key to show or hide
+_View > Timeline_ menu option or press the <kbd>Tab</kbd> key to show or hide
 it. It also appears automatically when you create a [new Frame](new-frame.md) or
-[Layer](new-layer.md). (This behavior can be disable from *Edit > Options > Timeline >
-Show timeline automatically*.)
+[Layer](new-layer.md). (This behavior can be disable from _Edit > Options > Timeline >
+Show timeline automatically_.)
 
-You can use *Layer > New Layer* menu (<kbd>Shift+N</kbd>) to create new layers
-or *Frame > New Frame* menu (<kbd>Alt+N</kbd>) to add frames.
+You can use _Layer > New Layer_ menu (<kbd>Shift+N</kbd>) to create new layers
+or _Frame > New Frame_ menu (<kbd>Alt+N</kbd>) to add frames.
 
 ### Common Operations
 
-* [Layers](layers.md):
-  * [Move layers](move-layers.md)
-  * [Copy layers](copy-layers.md)
-* [Frames](animation.md):
-  * [Move frames](move-frames.md)
-  * [Copy frames](copy-frames.md)
-* [Cels](cel.md):
-  * [Move cels](move-cels.md)
-  * [Copy cels](copy-cels.md)
+- [Layers](layers.md):
+  - [Move layers](move-layers.md)
+  - [Copy layers](copy-layers.md)
+- [Frames](animation.md):
+  - [Move frames](move-frames.md)
+  - [Copy frames](copy-frames.md)
+- [Cels](cel.md):
+  - [Move cels](move-cels.md)
+  - [Copy cels](copy-cels.md)
 
 ## Preferences
 
@@ -38,13 +38,13 @@ Some options:
 ## Copy between documents
 
 You can copy and paste layers, frames, or cels between different
-documents using *Edit > Copy* and *Edit > Paste*.
+documents using _Edit > Copy_ and _Edit > Paste_.
 
 ![Copy and Paste on Timeline](timeline/timeline-copy-and-paste.gif)
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Animation](animation.md) |
 [Onion Skinning](onion-skinning.md) |

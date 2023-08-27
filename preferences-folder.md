@@ -5,8 +5,8 @@ configuration directory:
 
 ![Files in Preferences Folder](preferences/preffiles.png)
 
-You can access this folder from *Edit > Preferences > Locate
-Configuration File* option.
+You can access this folder from _Edit > Preferences > Locate
+Configuration File_ option.
 
 Anyway, you can manually locate that folder in different ways
 depending on your platform:
@@ -26,7 +26,7 @@ And press `Enter` key.
 You can open the Spotlight Search (<kbd>⌘Space</kbd>) and then paste the following text
 `~/Library/Application Support/Aseprite` with <kbd>⌘V</kbd> and press <kbd>Enter</kbd>:
 
-   ![Spotlight Search](preferences/spotlight.png)
+![Spotlight Search](preferences/spotlight.png)
 
 ## On Linux
 
@@ -43,7 +43,7 @@ pointing to other folder.
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Preferences](preferences.md) |
 [Reset Preferences](reset-preferences.md)

@@ -41,6 +41,6 @@ Content of `package.json` file:
 
 ---
 
-**SEE ALSO**
+**参见**
 
 [Extensions](extensions.md)
