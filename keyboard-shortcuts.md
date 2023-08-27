@@ -1,25 +1,14 @@
-# Keyboard Shortcuts
+# 键盘快捷键
 
-You can customize the keyboard shortcuts or the combination of keys +
-[mouse wheel](mouse-wheel.md) (or [mouse movement](drag-value.md))
-from _Edit > [Keyboard Shortcuts](keyboard-shortcuts.md)_
-menu option or <kbd>Ctrl+Alt+Shift+K</kbd> key (or <kbd>⌥⇧⌘K</kbd> on macOS).
+你可以自定义键盘快捷键或按键和[鼠标滚轮](mouse-wheel.md)（或[鼠标移动](drag-value.md)），使用*Edit > [Keyboard Shortcuts](keyboard-shortcuts.md)*菜单选项或 kbd>Ctrl+Alt+Shift+K</kbd>按键（或者 macOS<kbd>⌥⇧⌘K</kbd>）
 
-There is a general overview of the default keyboard shortcuts in the [Quick Reference](/quickref/) page.
+在[快捷参考](/quickref/)中有一个默认键盘快捷键的常用概览。
 
-## Menus & Commands
+## 菜单 & 命令
 
-In these sections you will find a way to assign a key to every
-action/command in Aseprite that is accessible from the [menu bar](menu-bar.md)
-and other commands that are not part of the main menu but are still
-accessible for advanced users (e.g. "Set Ink Type"
-is not associated to any menu or has default keyboard shortcut, but
-you can assign a key from the "Commands" section).
+在这些章节中，你可以找到设置每一个[菜单栏](menu-bar.md)操作/命令或不在菜单栏的高级命令的快捷键的方法。（比如“设置墨水类型”无法在任何菜单中找到也没有默认键盘快捷键，但是你可以设置一个“命令”章节中的按键。）
 
-Remember to use the search field in this dialog to filter and find a
-specific command.
-
-## Tools
+## 工具
 
 In the Tools section you will find a way to see and change the keys
 associated with each tool from the [Tool Bar](tool-bar.md). There are

@@ -83,57 +83,43 @@
 
 [REPL 模式](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)运行 Aseprite。在这个模式中，你可以写 Javascript 代码。未来版本，将会更新一个[特定 API](https://github.com/aseprite/api-draft)。
 
-// TODO
-
 ## --batch
 
-Runs Aseprite only to process command line options, then
-finishes. It's specially useful if you are running Aseprite from a
-script to automate sprite sheet generation, image conversion, etc.
-Example:
+运行 Aseprite 但只运行命令行选项，然后结束。如果你想从一个脚本运行 Aseprite 来进行自动的精灵表生成、图像转换等时非常有用。示例：
 
     aseprite --batch
 
-Or you can use the shorter form:
+或者你可以使用缩略形式：
 
     aseprite -b
 
 ## --preview
 
-On **v1.2-beta2**: Only show what will be done (doesn't modify files
-in disk).
+在**v1.2-beta2**中，只显示成果（不修改磁盘中的文件）。
 
     aseprite --preview ...
 
 ## --save-as
 
-Saves the latest opened document with the given file name. It's like
-calling `File > Save As` from the interface. Example:
+使用给定的文件名保存最新被打开的文档，相当于在界面中使用`File > Save As`。示例：
 
     aseprite -b sprite.ase --save-as frame001.png
 
-Will generate `frame001.png`, `frame002.png`, etc. for each frame in `sprite.ase`.
+这会生成`frame001.png`、`frame002.png`等`sprite.ase`的帧图像。
 
-On **v1.2-beta1**: You can specify
-[--filename-format](#filename-format) parameters in the filename
-directly. For example:
+在**v1.2-beta1**中，你可以直接指定[--filename-format](#filename-format)参数到文件名中。示例：
 
     aseprite -b sprite.ase --save-as layer-{layer}-frame-{frame01}.png
 
-It's like using [--split-layers](#split-layers) and
-[--filename-format](#filename-format) implicitly.
+这就像分别使用[--split-layers](#split-layers)和[--filename-format](#filename-format)
 
 ## --palette
 
-On **v1.2-beta2**: Changes the color palette of the last given sprite
-in the command. It can be used to save one sprite with different color
-palettes:
+在**v1.2-beta2**中，更改命令中给出的最后一个精灵的调色板。它可以用来用不同的掉色版来保存一个精灵：
 
     aseprite -b ryu-template.png --palette pal1.png --save-as ryu1.png --palette pal2.png --save-as ryu2.png
 
-On **v1.1** this parameter was used to change the default program
-palette, but it can be done now using the
-_[Save as Default Palette](default-palette.md)_ menu option.
+在**v1.1**这个参数用于改变默认的程序调色板，但现在可以使用*[Save as Default Palette](default-palette.md)*菜单选项。
 
 ## --scale
 
