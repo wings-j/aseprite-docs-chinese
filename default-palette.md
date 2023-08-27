@@ -1,7 +1,5 @@
-# Default Palette
+# 默认调色板
 
-New sprites are create with a default palette. And it's [Richard "DawnBringer" Fhager 32 colors palette](http://pixeljoint.com/forum/forum_posts.asp?TID=16247) by default.
+新的精灵被创建时伴随着一个默认调色板，并且默认情况下它是[Richard "DawnBringer" Fhager 32 colors palette](http://pixeljoint.com/forum/forum_posts.asp?TID=16247)。
 
-Anyway you can change this default palette using the *Save as Default Palette* option:
-
-<a href="http://imgur.com/05tiLaW"><img src="http://i.imgur.com/05tiLaW.gif" title="source: imgur.com" /></a>
+你可以用*Save as Default Palette*选项来更改默认调色板。
