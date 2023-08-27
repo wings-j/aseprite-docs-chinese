@@ -1,11 +1,11 @@
-# Flip Sprite or Selection
+# 翻转精灵或选区
 
-## Flip Horizontal
+## 水平翻转
 
-To flip the sprite or selection horizontally, you can select *Edit > Flip Horizontal* menu (<kbd>Shift+H</kbd>).
+要水平翻转精灵或选区，你可以选择*Edit > Flip Horizontal*菜单（<kbd>Shift+H</kbd>）。
 
-## Flip Vertical
+## 垂直翻转
 
-To flip the sprite or selection vertically, you can select *Edit > Flip Vertical* menu (<kbd>Shift+V</kbd>).
+要垂直翻转精灵或选区，你可以选择*Edit > Flip Vertical*菜单（<kbd>Shift+V</kbd>）。
 
 ![Flip preview](flip/flip.gif)
