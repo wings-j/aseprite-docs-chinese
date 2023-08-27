@@ -1,55 +1,39 @@
-# Ink
+# 墨水
 
-<img src="/docs/ink/inks.png" alt="Inks" class="x2" />
+墨水变更[激活工具](tool-bar.md)绘画的方式。默认墨水是*简单墨水*。
 
-The ink modifies the way the [active tool](tool-bar.md) paints. The
-default ink is the _Simple Ink_.
+## 简单墨水
 
-## Simple Ink
+它起了下列的作用：
 
-It acts in the following way:
+1. 如果[前景色](color-bar.md#foreground-color)是不透明的（alpha = 255 = 100%），它使用给定的不透明色绘画。
+2. 如果颜色的 alpha 值有效（0 < alpha < 255），它和图层表面的颜色相混合。
+3. 如果颜色是透明的（alpha = 0，掩膜色），此时相当于一个橡皮擦。
 
-1. If the [foreground color](color-bar.md#foreground-color) is opaque
-   (alpha = 255 = 100%), it paints with the given opaque color.
-1. If the color has alpha (0 < alpha < 255), it composite the color
-   with the layer surface.
-1. If the color is transparent (alpha = 0, Mask color), the tool acts
-   like an Eraser.
+## Alpha 组合
 
-## Alpha Compositing
+它根据[前景色](color-bar.md#foreground-color)的 alpha 值把前景色和图层表面相组合。
 
-It merges the [foreground color](color-bar.md#foreground-color) with
-the layer surface depending on the alpha value of the foreground color:
+1. 如果 alpha = 255 = 100%，前景色完全不透明。
+2. 如果 alpha = 128 = 50%，前景色的 50% 和图层表面色的 50% 混合。
+3. 如果 alpha = 0 = 0%，绘图没有效果因为颜色完全透明。
 
-1. If alpha = 255 = 100%, the foreground color will be completely opaque.
-1. If alpha = 128 = 50%, the foreground color is merged 50% with the layer surface color.
-1. If alpha = 0 = 0%, the painting has no effect because the color is completely transparent.
+## 复制 Alpha + 颜色
 
-## Copy Alpha+Color
+它用激活的前景色（包括 alpha 值）替换图层表面像素。它不会进行任何 alpha 组合，它只是将激活的颜色放到目标像素上。
 
-It replaces the layer surface pixels with the active foreground color
-with its alpha value. It doesn't make any kind of alpha compositing,
-it just takes the active color and put it exactly as it is in the
-destination pixel.
+比如说，当 alpha = 128 =50% 时，最终的颜色相当于 alpha = 128 的前景色并忽略表面图层。
 
-E.g. In this case, if alpha = 128 = 50%, the final color will be the
-same as the foreground color with alpha = 128, ignoring the layer
-surface.
+## 锁定 Alpha
 
-## Lock Alpha
+在这个情况下，来自图层原本的 alpha 值会被保留，只有 RGB 颜色组分被来自前景色的组分替换。
 
-In this case the original alpha values from the layer surface are
-kept, and only the RGB color components are replaced from the
-foreground color.
+## 投影
 
-## Shading
-
-See the [shading section](shading.md) for more information about this
-special ink for pixel-art.
+想要获取更多关于这种特殊像素艺术墨水的信息，可以参见[投影章节](shading.md)。
 
 ---
 
 **参见**
 
-[Drawing](drawing.md) |
-[Shading](shading.md)
+[绘画](drawing.md) | [投影](shading.md)
