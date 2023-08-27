@@ -1,11 +1,11 @@
-# Flip Canvas
+# 翻转画布
 
-## Flip Canvas Horizontal
+## 水平翻转画布
 
-To flip the canvas horizontally, you can select *Sprite > Rotate Canvas > Flip Canvas Horizontal* menu.
+要水平翻转画布，你可以选择*Sprite > Rotate Canvas > Flip Canvas Horizontal*菜单。
 
-## Flip Canvas Vertical
+## 垂直翻转画布
 
-To flip the canvas vertically, you can select *Sprite > Rotate Canvas > Flip Canvas Vertical* menu.
+要垂直翻转画布，你可以选择*Sprite > Rotate Canvas > Flip Canvas Vertical*菜单。
 
 ![Flip Canvas Preview](canvas/canvas-flip.gif)
