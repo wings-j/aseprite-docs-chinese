@@ -125,8 +125,7 @@
 
     aseprite ... --scale FACTOR
 
-Resizes all images with the given `FACTOR` specified before
-`--scale` option in the command line. Example:
+根据给定的`FACTOR`重新设定在命令行中`--scale`选项前的所有图片的尺寸。示例：
 
     aseprite -b original.png --scale 2 --save-as image-x2.png
 
@@ -134,8 +133,7 @@ Resizes all images with the given `FACTOR` specified before
 
     aseprite -b sprite.ase --dithering-algorithm ALGORITHM
 
-Dithering algorithm used in [--color-mode indexed](#color-mode) to convert images from
-RGB to Indexed.
+抖动算法被用在[--color-mode indexed](#color-mode)命令中，以转换图像从 RGB 模式为索引模式。
 
 - `--dithering-algorithm none`
 - `--dithering-algorithm ordered`
@@ -145,36 +143,28 @@ RGB to Indexed.
 
     aseprite -b sprite.ase --dithering-matrix MATRIX
 
-Dithering matrix used for
-[--dithering-algorithm](#dithering-algorithm) and
-[--color-mode indexed](#color-mode) to convert images
-from RGB to Indexed. The `MATRIX` can be:
+抖动矩阵被用在[--dithering-algorithm](#dithering-algorithm)和[--color-mode indexed](#color-mode)命令中，以转换图像从 RGB 模式为索引模式。`MATRIX`可以是：
 
 - `--dithering-matrix bayer8x8`
 - `--dithering-matrix bayer4x4`
 - `--dithering-matrix bayer2x2`
-- Or the identifier (`id`) of other dithering matrices in installed extensions.
+- 或者已安装插件提供的其它抖动矩阵的标识符（`id`）。
 
-These default dithering matrices (`bayer8x8`, etc.) are in the
-[bayer-matrices](https://github.com/aseprite/aseprite/tree/master/data/extensions/bayer-matrices)
-extension of Aseprite, and these
-ids in its [packages.json](https://github.com/aseprite/aseprite/blob/master/data/extensions/bayer-matrices/package.json#L10) file.
+这些默认的抖动矩阵（比如`bayer8x8`）包含在[bayer-matrices](https://github.com/aseprite/aseprite/tree/master/data/extensions/bayer-matrices) Aseprite 插件中，编号则在[packages.json](https://github.com/aseprite/aseprite/blob/master/data/extensions/bayer-matrices/package.json#L10)文件中。
 
 ## --color-mode
 
     aseprite -b sprite.ase --color-mode MODE
 
-Changes the color mode to the given `MODE` of all previously opened
-sprites. The `MODE` can be:
+改变所有之前打开的精灵的颜色模式为给定的`MODE`。这个`MODE`可以是：
 
 - `--color-mode rgb`
 - `--color-mode grayscale`
 - `--color-mode indexed`
 
-Remember that [--dithering-algorithm](#dithering-algorithm) and [--dithering-matrix](#dithering-matrix)
-will affect the RGB → Indexed conversion.
+记得[--dithering-algorithm](#dithering-algorithm)和[--dithering-matrix](#dithering-matrix)会影响 RGB → Indexed 转换。
 
-Examples:
+示例：
 
 ```
 aseprite -b idx-sprite.ase --color-mode rgb --save-as rgb-output.png
@@ -185,18 +175,16 @@ aseprite -b rgb-sprite.ase --dithering-algorithm ordered --dithering-matrix baye
 
     aseprite.exe ... --sheet file.png --data file.json
 
-Saves information about the exported sprite sheet in a JSON
-format. [Output example.](https://gist.github.com/dacap/db18e5747a4b6e208d3c)
+保存导出精灵表的信息为 JSON 格式。
 
-See [--sheet](#sheet) option to change the destination of the sprite sheet image.
+参见 [--sheet](#sheet) 选项，可以改变精灵表图片的保存位置。
 
 ## --format
 
-Changes the format used to shave the sprite sheet data specified in
-[--data](#data) option. Available formats are:
+更改用于剔除[--data](#data)选项指定的精灵表数据的格式。可用的格式有：
 
-- `--format json-hash` (default format) ([example](https://gist.github.com/dacap/db18e5747a4b6e208d3c))
-- `--format json-array` ([example](https://gist.github.com/dacap/a32adb9248320326733a))
+- `--format json-hash`（默认格式）（[example](https://gist.github.com/dacap/db18e5747a4b6e208d3c)）
+- `--format json-array`（[example](https://gist.github.com/dacap/a32adb9248320326733a)）
 
 ## --sheet
 
