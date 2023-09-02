@@ -190,47 +190,43 @@ aseprite -b rgb-sprite.ase --dithering-algorithm ordered --dithering-matrix baye
 
     aseprite ... --sheet SPRITESHEET.png
 
-Exports all images specified in the command line before the `--sheet`
-option in the `SPRITESHEET.png` image (the file will be overwritten).
+到处所有命令行中在`--sheet`选项之前指定的图片到`SPRITESHEET.png`图像（文件会被覆盖）。
 
-See [--data](#data) option to change the destination of the sprite sheet JSON data.
+参见[--data](#data)选项，改变精灵表 JSON 数据的目标位置。
 
 ## --sheet-width
 
-Specifies a fixed width (in pixels) for the sprite sheet in [--sheet](#sheet).
+指定[--sheet](#sheet)指向的精灵表的宽度（像素）。
 
 ## --sheet-height
 
-Specifies a fixed height (in pixels) for the sprite sheet in [--sheet](#sheet).
+指定[--sheet](#sheet)指向的精灵表的高度（像素）。
 
 ## --sheet-type
 
-Type of sprite sheet when [--sheet](#sheet) is used:
+[--sheet](#sheet)使用的精灵表类型：
 
 - `horizontal`
 - `vertical`
 - `rows`
 - `columns`
-- `packed` (same as [--sheet-pack](#sheet-pack))
+- `packed` (和[--sheet-pack](#sheet-pack)相同)
 
 ## --sheet-pack
 
-Use a special packing algorithm to avoid waste of space in the sprite sheet.
+使用一个特殊的打包算法来避免精灵表的存储空间浪费。
 
 ## --split-layers
 
-Splits the visible layers of the **next document** in the command
-line, so then you can save each layer as an independent image/item. It
-affects [--sheet](#sheet) and [--save-as](#save-as) options.
-**Warning**: The `--split-layers` option must be **before** your sprite.
+分割命令行中声明的**下一个文档**的可见图层，这样你就可以保存每个图层到一个独立的图像/条目。它影响[--sheet](#sheet)和[--save-as](#save-as)选项。
 
-- Example:
+**警告**: The `--split-layers`选项必须在你的精灵**之前**。
+
+示例:
 
       aseprite.exe -b --split-layers with-layers.ase --save-as output1.png
 
-  Check that `--split-layers` must be before `with-layers.ase`. In this example,
-  if `with-layers.ase` contains 3 frames and layers `Background` and `Layer 1`,
-  the following command will generate 6 files (one for each frame/layer):
+记得`--split-layers`必须在`with-layers.ase`之前。在这个示例中，如果`with-layers.ase`有 3 帧，和`Background`与`Layer 1`图层，接下来的命令会生成个文件（每个帧/图层一个文件）：
 
       output (Background) 1.png
       output (Background) 2.png
@@ -239,57 +235,47 @@ affects [--sheet](#sheet) and [--save-as](#save-as) options.
       output (Layer 1) 2.png
       output (Layer 1) 3.png
 
-Since **v1.2-beta1**: If you specify `{layer}` in the
-[--save-as](#save-as) filename, the `--split-layers` is implicitly
-used. For example
+从**v1.2-beta1**开始，如果你在[--save-as](#save-as)的文件名中指定`{layer}`，`--split-layers`就是隐式使用的。比如：
 
     aseprite.exe -b with-layers.ase --save-as output-{layer}-{frame}.png
 
-To save hidden layers, you can combine this with the [--all-layers](#all-layers) option:
+想要保存隐藏的图层，你可以把这个选项和[--all-layers](#all-layers)合并：
 
     aseprite.exe -b --all-layers with-layers.ase --save-as output-{layer}-{frame}.png
 
 ## --split-tags
 
-Since **v1.2-beta8**, splits next document tags into different
-files. It affects the [--save-as](#save-as) option. Same as doing:
+从**v1.2-beta8**开始，分割下一个文档的标签到不同的文件中。它影响[--save-as](#save-as)选项。如同：
 
     aseprite.exe -b animations.ase --save-as animations-{tag}.gif
 
 ## --split-slices
 
-Since **v1.2-beta8**, splits next document slices into different
-files. It affects the [--save-as](#save-as) option. Same as doing:
+从**v1.2-beta8**开始，分割下一个文档的切片到不同的文件中。它影响[--save-as](#save-as)选项。如同：
 
     aseprite.exe -b sheet.ase --save-as part-{slice}.png
 
 ## --layer
 
-Selects just one layer to be exported (hides all other layers). It
-affects [--sheet](#sheet) and [--save-as](#save-as) options.
+选择并仅导出一个图层（隐藏所有其它图层）。它影响[--sheet](#sheet)和[--save-as](#save-as)选项。
 
     aseprite.exe -b --layer "Body Layer" with-layers.ase --save-as body-layer.gif
 
-Saves a `body-layer.gif` animation showing only the layer called `Body Layer`.
+保存一个仅包含`Body Layer`图层的动画到`body-layer.gif`文件中。
 
-On **v1.2-beta2** you can specify multiple layers and/or groups:
+在**v1.2-beta2**，你可以指定多个图层和/或组：
 
     aseprite.exe -b --layer "head/hat" --layer "body/gloves" player.ase --save-as clothes.gif
 
-Will save a `clothes.gif` animation showing only the `hat` layer
-(which is a child of `head` group) and `gloves` layer which is a child
-of `body` group.
+保存一个劲包含`hat`图层（`head`组的一个子元素）和`gloves`图层（`body`组的一个子元素）的动画到`clothes.gif`文件中。
 
 ## --all-layers
 
     aseprite -b ... --all-layers ...
 
-Includes/shows all layers for a
-[--save-as](#save-as)/[--sheet](#sheet) operation. If your sprite
-contains hidden layers but you want to export those layers too, you
-can use this option.
+在[--save-as](#save-as)/[--sheet](#sheet)操作中包含/显示所有图层。如果你的精灵中包含隐藏的图层但是你想导出他们，你可以使用这个选项。
 
-Example:
+示例：
 
     aseprite -b --all-layers player.aseprite --save-as player-{layer}-{frame}.png
 
@@ -297,11 +283,11 @@ Example:
 
     aseprite -b ... --ignore-layer LAYERNAME ...
 
-Hides a specific layer for the final result/render in a
-[--save-as](#save-as)/[--sheet](#sheet) operation.
+在[--save-as](#save-as)/[--sheet](#sheet)操作中，在最后的结果/渲染中隐藏一个特定的图层。
 
-You must specify this parameter before opening the `.aseprite` file.
-Example:
+你必须在打开`.aseprite`文件前指明这个参数。
+
+示例：
 
     aseprite -b --ignore-layer "Guides Layer" player.aseprite --save-as player.gif
 
