@@ -548,14 +548,13 @@ end
 
     aseprite.exe -b --layer "Layer 1" animation.ase --save-as output-Layer-1.gif
 
-## Export all layers into different PNG/GIF files
+## 导出所有图层到不同的 PNG/GIF 文件
 
-If `animation.ase` contains 3 frames and layers `Background` and `Layer 1`,
-the following command will generate 6 files (one for each frame/layer):
+如果`animation.ase`包含 3 帧和图层`Background`和`Layer 1`，接下来的命令会生成 6 个文件（每帧/图层一个文件）：
 
     aseprite.exe -b --split-layers animation.ase --save-as output1.png
 
-Generated files will be:
+生成的文件是：
 
     output (Background) 1.png
     output (Background) 2.png
@@ -564,67 +563,62 @@ Generated files will be:
     output (Layer 1) 2.png
     output (Layer 1) 3.png
 
-On **v1.2-beta1**: You can specify [--split-layers](#split-layers) and
-[--filename-format](#filename-format) implicity using something like:
+在**v1.2-beta1**中，你可以隐式指定[--split-layers](#split-layers)和[--filename-format](#filename-format)，像这样：
 
     aseprite.exe -b animation.ase --save-as output-{layer}.png
 
-## Export an animation to a sprite sheet
+## 导出一个动画到精灵表
 
     aseprite.exe -b animation.ase --sheet sheet.png --data sheet.json
 
-## Export each layer as a different animation in the same sprite sheet
+## 导出每个图层为一个不同的动画到同一个精灵表
 
     aseprite.exe -b --split-layers animation-with-layers.ase --sheet sheet.png --data sheet.json
 
-## Export a specific layer from a sprite
+## 从一个精灵导出一个特定的图层
 
     aseprite.exe -b --layer=Background sprite.ase --sheet sheet.png --data sheet.json
 
-## Create a texture atlas from several sprites
+## 从几个精灵创建一个纹理地图
 
     aseprite.exe -b *.ase --sheet-pack --sheet atlas-bestfit.png --data atlas-bestfit.json
     aseprite.exe -b *.ase --sheet-pack --sheet-width=1024 --sheet-height=1024 --sheet atlas-1024x1024.png --data atlas-1024x1024.json
 
-# Platform-specific Details
+# 平台特定细节
 
-On Windows, if you've installed the program it should be located
-`Program Files` folder, try this command:
+在 Windows 中，如果你安装了程序，它应该位于`Program Files`文件夹中，尝试这个命令：
 
     "C:\Program Files (x86)\Aseprite\Aseprite.exe" --help
 
-Or
+或者
 
     "C:\Program Files\Aseprite\Aseprite.exe" --help
 
-On macOS, if you've installed the program in `/Applications`, try the following command:
+在 macOS 中，如果你安装了程序到`/Applications`，尝试下列的命令：
 
     /Applications/Aseprite.app/Contents/MacOS/aseprite --help
 
-# Automating the process
+# 自动化过程
 
-## If Aseprite was installed directly
+## 如果 Aseprite 被直接安装
 
-You could create a `convert.bat` text file in your assets directory
-(i.e. where your `.ase` files are located) with some lines like these:
+你可以在资源文件夹（即你的`.ase`文件所在的位置）创建一个`convert.bat`文本文件，包含下列内容：
 
     @set ASEPRITE="C:\Program Files\Aseprite\aseprite.exe"
     %ASEPRITE% -b animation.ase --scale 2 --save-as animation-x2.gif
     %ASEPRITE% -b animation.ase --scale 4 --save-as animation-x4.gif
 
-So each time you modify the original animation in `animation.ase`,
-double clicking the `.bat` file you could generate `animation-x2.gif` and
-`animation-x4.gif` automatically from the new content.
+每一次你修改`animation.ase`的原始动画，双击`.bat`文件你会从新内容自动生成一个`animation-x2.gif`和一个`animation-x4.gif`文件。
 
-For Mac users, you could create a `convert.sh`:
+对于 Mac 用户，你可以创建`convert.sh`：
 
     ASEPRITE="/Applications/Aseprite.app/Contents/MacOS/aseprite"
     $ASEPRITE -b animation.ase --scale 2 --save-as animation-x2.gif
     $ASEPRITE -b animation.ase --scale 4 --save-as animation-x4.gif
 
-## In the case of Steam
+## 在 Steam 场景中
 
-Aseprite binary is installed in the following directories.
+Aseprite 二进制文件被安装到下列目录：
 
 - Mac `~/Library/Application Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS/aseprite`
 - Windows `C:\Program Files (x86)\Steam\steamapps\common\Aseprite\Aseprite.exe`
