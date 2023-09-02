@@ -293,29 +293,27 @@ aseprite -b rgb-sprite.ase --dithering-algorithm ordered --dithering-matrix baye
 
 ## --tag
 
-Exports the frames inside the given tag only. It works for
-[--sheet](#sheet) on **v1.1**, and it works for [--save-as](#save-as) since
-**v1.2-beta1**.
+导出帧到给定的标签中。在**v1.1**中，它对[--sheet](#sheet)起效，从**v1.2-beta1**开始，它对[--save-as](#save-as)起效。
 
-Example:
+示例：
 
     aseprite -b --tag "Run Cycle" several-animations.ase --save-as run-cycle.gif
 
 ## --frame-range
 
-Exports the frames inside the given `[from, to]` range only.
+导出在给定`[from, to]`范围内的帧。
 
 ## --ignore-empty
 
-Ignores empty frames/layers. It affects [--sheet](#sheet) option.
+忽略空帧/图层。它影响[--sheet](#sheet)选项。
 
-On **v1.2.10-beta3**: It affects [--save-as](#save-as) too.
+在**v1.2.10-beta3**中，它也影响[--save-as](#save-as)。
 
 ## --border-padding
 
     aseprite ... --border-padding N ...
 
-Includes a border for the whole sheet of N pixels. It affects [--sheet](#sheet) option only.
+给整个 N 像素的表引入一个边框。它只影响[--sheet](#sheet)选项。
 
 ![Border Padding](cli/border-padding.png)
 
@@ -323,7 +321,7 @@ Includes a border for the whole sheet of N pixels. It affects [--sheet](#sheet) 
 
     aseprite ... --shape-padding N ...
 
-Includes a separation between each frame of N pixels. It affects [--sheet](#sheet) option only.
+在每个 N 像素的帧之前引入一个空格。它只影响[--sheet](#sheet)选项。
 
 ![Shape Padding](cli/shape-padding.png)
 
@@ -331,66 +329,58 @@ Includes a separation between each frame of N pixels. It affects [--sheet](#shee
 
     aseprite ... --inner-padding N ...
 
-Includes a border to each frame of N pixels. It affects [--sheet](#sheet) option only.
+在每个 N 像素的帧之前引入一个边框。它只影响[--sheet](#sheet)选项。
 
 ![Inner Padding](cli/inner-padding.png)
 
 ## --trim
 
-Removes borders from sprites/layers/cels before save
-them. (I.e. executes the _Edit > Trim_ option for each image to be
-exported.) It affects [--sheet](#sheet) and [--save-as](#save-as)
-options.
+在保存精灵/图层/赛璐珞之前去除它们的边框（相当于每个将要被导出的图像执行*Edit > Trim*）。它影响[--sheet](#sheet)和[--save-as](#save-as)选项。
 
 ## --crop
 
     aseprite ... --crop X,Y,WIDTH,HEIGHT
 
-Exports only the specified rectangle from all sprites/layers/cels. It
-affects [--sheet](#sheet) and [--save-as](#save-as) options.
+导出精灵/图层/赛璐珞中指定矩形的部分。它影响[--sheet](#sheet)和[--save-as](#save-as)选项。
 
 ## --extrude
 
-Since **v1.2-beta21**: Extrudes all images/sprites that are going to
-be exported with [--sheet](#sheet) duplicating all edges one pixel.
+从**v1.2-beta21**开始，[--sheet](#sheet)将要导出的图像/精灵边缘复制一个像素。
 
 ## --slice
 
-Since **v1.2-beta8**:
+从**v1.2-beta8**开始
 
     aseprite ... --slice SLICE
 
-Exports only the area specified by the given slice. It affects
-[--save-as](#save-as) option.
+仅导出指定剪裁区域。它影响[--save-as](#save-as)选项。
 
 ## --filename-format
 
     aseprite --filename-format FORMAT
 
-This option specifies the special string used to format filenames
-generated in sprite sheets on [--sheet](#sheet) or files generated on
-[--save-as](#save-as).
+这个选项指定一个特殊的字符串，用来设定[--sheet](#sheet)生成的精灵表或[--save-as](#save-as)生成的文件的名称格式。
 
-The `FORMAT` string can contain some special values:
+`FORMAT`字符串可以包含一些特殊值：
 
-- `{fullname}`: Original sprite full filename (path + file + extension).
-- `{path}`: Path of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `C:\game-assets`.
-- `{name}`: Name (including extension) of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `file.ase`.
-- `{title}`: Name without extension of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `file`.
-- `{extension}`: Extension of the filename. E.g. If the sprite filename is `C:\game-assets\file.ase` this will be `ase`.
-- `{layer}`: Current layer name.
-- `{tag}`: Current tag name.
-- `{innertag}`: Smallest/inner current tag name.
-- `{outertag}`: Largest/outer current tag name.
-- `{frame}`: Current frame (starting from `0`). You can use `{frame1}` to start from 1, or other formats like `{frame000}`, or `{frame001}`, etc.
-- `{tagframe}`: The current frame in the current tag. It's `0` for the first frame of the tag, and so on. Same as `{frame}`, it accepts variants like `{tagframe000}`.
-- `{duration}` The duration of the current frame.
+- `{fullname}`：原精灵全名（路径 + 文件名 + 扩展名）。
+- `{path}`：文件名的路径。 比如，如果精灵文件名是`C:\game-assets\file.ase`，将会得到`C:\game-assets`。
+- `{name}`：文件名的名称（包含扩展名）比如，如果精灵文件名是`C:\game-assets\file.ase`，将会得到`file.ase`。
+- `{title}`：文件名中不包含扩展名的名称。比如，如果精灵文件名是`C:\game-assets\file.ase`，将会得到`file`。
+- `{extension}`：文件名的扩展名。比如，如果精灵文件名是`C:\game-assets\file.ase`，将会得到`ase`。
+- `{layer}`：当前图层名。
+- `{tag}`：当前标签名。
+- `{innertag}`：最小/内部当前标签名。
+- `{outertag}`：最大/外部当前标签名。
+- `{frame}`：当前帧（从`0`开始 ）。你可以用`{frame1}`从 1 开始，或者其它形式，比如`{frame000}`或`{frame001}`等等。
+- `{tagframe}`：当前标签的当前帧。`0`表示当前标签的第一帧，以此类比。和`{frame}`一样，它接受像`{tagframe000}`的变量。
+- `{duration}`：当前帧的时长。
 
-For example, if `animation-with-layers.ase` contains three frames with two layers (named `Face` and `Background`):
+比如，如果`animation-with-layers.ase`包含 3 帧和 2 个图层（命名为`Face`和`Background`）：
 
     aseprite -b animation-with-layers.ase --filename-format '{path}/{title}-{layer}-{frame}.{extension}' --save-as output.png
 
-Will generate files like:
+会生成这样的文件：
 
     output-Face-0.png
     output-Face-1.png
@@ -399,22 +389,21 @@ Will generate files like:
     output-Background-1.png
     output-Background-2.png
 
-On **v1.2-beta1**: You can specify the filename format in the same
-[--save-as](#save-as) argument.
+在**v1.2-beta1**，你可以用同一个[--save-as](#save-as)参数指定文件名格式。
 
 ## --script
 
     aseprite -script filename.lua
 
-Executes the given script from the command line.
+在命令行中执行指定的脚本。
 
 ## --script-param
 
-This is a way to add elements to the [`app.params`](https://github.com/aseprite/api/blob/master/api/app.md#appparams) table:
+这是一个添加元素到[`app.params`](https://github.com/aseprite/api/blob/master/api/app.md#appparams)表格的方法：
 
     aseprite -b -script-param key1=value1 -script test.lua
 
-And then `test.lua`
+然后`test.lua`
 
 ```lua
 if app.params["key1"] == "value1" then
@@ -426,7 +415,7 @@ end
 
     aseprite --list-layers file.ase
 
-Prints the list of layers in the given file from bottom to top. E.g.
+打印出给定文件中从底到顶的图层列表。比如：
 
 ![Layers](cli/list-layers.png)
 
@@ -435,8 +424,7 @@ Prints the list of layers in the given file from bottom to top. E.g.
     Layer 1
     Layer 2
 
-When used with [--data](#data), the layers will be available in the
-JSON output in the `meta` attribute. E.g.
+当和[--data](#data)一起被使用是，图层会在 JSON 输出的`meta`属性中获得。比如：
 
     { "frames": [
       ...
@@ -455,7 +443,7 @@ JSON output in the `meta` attribute. E.g.
 
     aseprite --list-tags file.ase
 
-Prints the list of tags in the given file from the first one to the last one. E.g.
+打印出给定文件中从第一到最后的标签列表。比如：
 
 ![Tags](cli/list-tags.png)
 
@@ -463,8 +451,7 @@ Prints the list of tags in the given file from the first one to the last one. E.
     Walk
     Run
 
-When used with [--data](#data), the tags will be available in the JSON
-output in the `meta` attribute. E.g.
+当和[--data](#data)一起被使用是，标签会在 JSON 输出的`meta`属性中获得。比如：
 
     { "frames": [
       ...
@@ -480,14 +467,13 @@ output in the `meta` attribute. E.g.
 
 ## --list-slices
 
-Since **v1.2-beta8**:
+从**v1.2-beta8**开始：
 
     aseprite --list-slices file.ase
 
-Prints the list of slices in the given file.
+打印给定文件的且切片列表。
 
-When used with [--data](#data), slices will be available in the JSON
-output in the `meta` attribute. E.g.
+当和[--data](#data)一起被使用是，切片会在 JSON 输出的`meta`属性中获得。比如：
 
     { "frames": [
       ...
@@ -511,63 +497,54 @@ output in the `meta` attribute. E.g.
     aseprite -b --oneframe frame1.png --save-as frame1.pcx
     aseprite -b --oneframe walk-animation.aseprite --save-as walk-thumbnail.png
 
-On **v1.2-beta4**: Load just the first frame of the animation. It's
-useful to load just one frame in a image sequence (e.g. loading just
-`frame1.png` in case that `frame2.png`, `frame3.png`, etc. exist) or
-to load just the first frame of a full animation (e.g. useful to
-create a thumbnail of the animation).
+在**v1.2-beta4**中，只加载动画的第一帧。只加载动画序列（比如只加载`frame1.png`，即使`frame2.png`、`frame3.png`等存在）的第一帧或只加载整个动画的第一帧（对创建动画的缩略图）很有用。
 
 ## --debug
 
-If you execute Aseprite with the `--debug` parameter in the command
-line, a special `Aseprite-v1.1-dev-DebugOutput.txt` file will be
-created in your desktop with possible useful information to know what
-problem is going on (e.g. this is useful to know what is going on in
-case that the program don't start correctly).
+如果你在命令行中使用`--debug`参数执行 Aseprite，一个特别的`Aseprite-v1.1-dev-DebugOutput.txt`的文件会被创建在桌面上，包含可能出现的问题的信息（比如可以用来知道当程序没有正确启动时发生了什么）。
 
-On Steam, you can add this `--debug` option [from the Aseprite
-properties](http://imgur.com/txXcgzO).
+在 Steam 中，你可以[从 Aseprite 属性](http://imgur.com/txXcgzO)添加这个`--debug`选项。
 
 ## --verbose
 
     aseprite --verbose
 
-It will log more information in the `aseprite.log` file:
+这会在`aseprite.log`文件中记录更多的信息
 
-- On Windows: `aseprite.log` is located in `%AppData%\Aseprite\aseprite.log`
-- On macOS and Linux: `aseprite.log` is located in `~/.config/aseprite/aseprite.log`
+- Windows：`aseprite.log`位于`%AppData%\Aseprite\aseprite.log`。
+- macOS 和 Linux：`aseprite.log`位于`~/.config/aseprite/aseprite.log`。
 
 ## --help
 
     aseprite --help
 
-Shows available command line options in the console output.
+在控制台中显示命令行可用选项。
 
 ## --version
 
     aseprite --version
 
-Shows Aseprite version.
+显示 Aseprite 版本。
 
-# Use Cases
+# 用例
 
-## Convert Aseprite files into PNG, GIF, etc.
+## 转换 Aseprite 文件为 PNG、GIF 等等
 
     aseprite.exe -b image.ase --save-as image.png
     aseprite.exe -b animation.ase --save-as animation.gif
 
-## Convert an animation to a sequence of PNG files (frame1.png, frame2.png, etc.)
+## 转换一个动画为一组 PNG 文件序列（frame1.png、frame2.png 等等）
 
     aseprite.exe -b animation.ase --save-as frame1.png
 
-## Resize one sprite to several dimensions
+## 重新设定一个精灵的尺寸
 
     aseprite.exe -b original.ase --scale 2 --save-as output-x2.png
     aseprite.exe -b original.ase --scale 4 --save-as output-x4.png
     aseprite.exe -b original.ase --scale 6 --save-as output-x6.png
     aseprite.exe -b original.ase --scale 8 --save-as output-x8.png
 
-## Export one layers to PNG/GIF files
+## 导出一个图层到 PNG/GIF 文件
 
     aseprite.exe -b --layer "Layer 1" animation.ase --save-as output-Layer-1.gif
 
