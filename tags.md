@@ -1,21 +1,10 @@
-# Tags
+# 标签
 
-A tag indicates an animation of your sprite. Using several tags you
-can organize different animations of your sprite:
+一个标签表示你的精灵的一个动画。使用多个标签，你可以组织你精灵的不同动画。
 
-<img src="/docs/tags/tags.png" alt="Tags" class="xN" />
+想要创建一个标签你可以[选择一定范围](range.md)的帧，使用*Frame > Tags > New Tag*菜单选项，或者右键点击选项然后选择*New Tag*，或者按*F2*两次，也就是，第一次创建一个*Loop*标签，第二次显示标签的属性，这样你就可以修改它的名字。
 
-To create a tag you can [select a range](range.md) of frames and use the _Frame >
-Tags > New Tag_ menu option, or right-click the range and select _New
-Tag_, or press the _F2_ key two times, i.e. the first time will create
-a _"Loop"_ tag, the second time you press <kbd>F2</kbd> will show the tag
-properties so you can change its name, etc.:
-
-<img src="/docs/tags/tag-properties.png" alt="Tag Properties" class="x2" />
-
-The most interesting property of a tag is the _"Animation Direction"_,
-where you can specify three different modes to play the tag:
-_Forward_, _Reverse_, or _Ping-pong_.
+标签最让人关心的属性是*"Animation Direction"*，它可以让你指定播放标签的 3 钟模式：_Forward_、*Reverse*或者*Ping-pong*。
 
 ---
 
