@@ -1,7 +1,7 @@
 # 偏好
 
 你可以在*Edit > Preferences*菜单或按下<kbd>Ctrl+K</kbd>按键（或者 maxOS 中<kbd>⌘K</kbd>
-或<kbd>⌘,</kbd>）来改变 Aseprite 配置。如果你想要配置键盘快捷键，可以通过*Edit > [Keyboard Shortcuts](keyboard-shortcuts.md)*菜单选项。
+或<kbd>⌘,</kbd>）来改变 Aseprite 配置。如果你想要配置键盘快捷键，可以通过*Edit > [键盘快捷键](keyboard-shortcuts.md)*菜单选项。
 
 偏好对话框被分为多个章节：
 

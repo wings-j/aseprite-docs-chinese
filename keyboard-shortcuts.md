@@ -1,6 +1,6 @@
 # 键盘快捷键
 
-你可以自定义键盘快捷键或按键和[鼠标滚轮](mouse-wheel.md)（或[鼠标移动](drag-value.md)），使用*Edit > [Keyboard Shortcuts](keyboard-shortcuts.md)*菜单选项或 kbd>Ctrl+Alt+Shift+K</kbd>按键（或者 macOS<kbd>⌥⇧⌘K</kbd>）
+你可以自定义键盘快捷键或按键和[鼠标滚轮](mouse-wheel.md)（或[鼠标移动](drag-value.md)），使用*Edit > [键盘快捷键](keyboard-shortcuts.md)*菜单选项或 kbd>Ctrl+Alt+Shift+K</kbd>按键（或者 macOS<kbd>⌥⇧⌘K</kbd>）
 
 在[快捷参考](/quickref/)中有一个默认键盘快捷键的常用概览。
 

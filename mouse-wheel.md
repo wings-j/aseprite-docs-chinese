@@ -1,40 +1,37 @@
-# Mouse Wheel
+# 鼠标滚轮
 
-The default mouse wheel behavior depends
-on the [_Edit > Preferences > Editor > Zoom with scroll wheel_](preferences.md#editor) option.
-Some of this behavior will change in a near future: [Issue #2896](https://github.com/aseprite/aseprite/issues/2896)
+鼠标滚轮的默认行为依赖于[_Edit > Preferences > Editor > Zoom with scroll wheel_](preferences.md#editor)选项。一些行为在不久的将来可能会改变：[议题 #2896](https://github.com/aseprite/aseprite/issues/2896)。
 
-As reference and only in this section, the following symbols have the given meaning:
+作为参考且尽在本章节中，接下俩的符号有以下的意思：
 
-<kbd>⬆</kbd>: the mouse wheel is moved up <br/>
-<kbd>⬇</kbd>: the mouse wheel is moved down
+<kbd>⬆</kbd>: 鼠标滚轮向上滚动<br/>
+<kbd>⬇</kbd>: 鼠标滚轮向下滚动
 
-## With _Zoom with scroll wheel_
+## 有 _使用鼠标滚轮缩放_
 
-| Action              | Windows            | macOS              |
-| ------------------- | ------------------ | ------------------ |
-| Horz. Scroll Left   | <kbd>Shift+⬆</kbd> | <kbd>Shift+⬇</kbd> |
-| Horz. Scroll Right  | <kbd>Shift+⬇</kbd> | <kbd>Shift+⬆</kbd> |
-| Zoom In             | <kbd>⬆</kbd>       | <kbd>⬇</kbd>       |
-| Zoom Out            | <kbd>⬇</kbd>       | <kbd>⬆</kbd>       |
-| Increase Brush Size | <kbd>Ctrl+⬇</kbd>  | <kbd>Ctrl+⬆</kbd>  |
-| Decrease Brush Size | <kbd>Ctrl+⬆</kbd>  | <kbd>Ctrl+⬇</kbd>  |
+| 操作         | Windows            | macOS              |
+| ------------ | ------------------ | ------------------ |
+| 水平左滚动   | <kbd>Shift+⬆</kbd> | <kbd>Shift+⬇</kbd> |
+| 水平右滚动   | <kbd>Shift+⬇</kbd> | <kbd>Shift+⬆</kbd> |
+| 缩小         | <kbd>⬆</kbd>       | <kbd>⬇</kbd>       |
+| 放大         | <kbd>⬇</kbd>       | <kbd>⬆</kbd>       |
+| 减小笔刷尺寸 | <kbd>Ctrl+⬇</kbd>  | <kbd>Ctrl+⬆</kbd>  |
+| 增大笔刷尺寸 | <kbd>Ctrl+⬆</kbd>  | <kbd>Ctrl+⬇</kbd>  |
 
-## Without _Zoom with scroll wheel_
+## 没有 _使用鼠标滚轮缩放_
 
-| Action             | Windows            | macOS              |
-| ------------------ | ------------------ | ------------------ |
-| Scroll Up          | <kbd>⬆</kbd>       | <kbd>⬇</kbd>       |
-| Scroll Down        | <kbd>⬇</kbd>       | <kbd>⬆</kbd>       |
-| Horz. Scroll Left  | <kbd>Shift+⬆</kbd> | <kbd>Shift+⬇</kbd> |
-| Horz. Scroll Right | <kbd>Shift+⬇</kbd> | <kbd>Shift+⬆</kbd> |
-| Zoom In            | <kbd>Ctrl+⬆</kbd>  | <kbd>Ctrl+⬇</kbd>  |
-| Zoom Out           | <kbd>Ctrl+⬇</kbd>  | <kbd>Ctrl+⬆</kbd>  |
+| 操作       | Windows            | macOS              |
+| ---------- | ------------------ | ------------------ |
+| 上滚动     | <kbd>⬆</kbd>       | <kbd>⬇</kbd>       |
+| 下滚动     | <kbd>⬇</kbd>       | <kbd>⬆</kbd>       |
+| 水平左滚动 | <kbd>Shift+⬆</kbd> | <kbd>Shift+⬇</kbd> |
+| 水平右滚动 | <kbd>Shift+⬇</kbd> | <kbd>Shift+⬆</kbd> |
+| 缩小       | <kbd>Ctrl+⬆</kbd>  | <kbd>Ctrl+⬇</kbd>  |
+| 放大       | <kbd>Ctrl+⬇</kbd>  | <kbd>Ctrl+⬆</kbd>  |
 
-## Customization
+## 自定义
 
-From _Edit > Keyboard Shortcuts > Mouse Wheel_ you can
-configure the mouse wheel behavior when some extra key is pressed:
+在*Edit > Keyboard Shortcuts > Mouse Wheel*你可以配置当额外的键按下时鼠标的滚轮行为：
 
 ![Mouse Wheel on Keyboard Shortcuts](keyboard-shortcuts/mouse-wheel-custom.png)
 
@@ -42,6 +39,4 @@ configure the mouse wheel behavior when some extra key is pressed:
 
 **参见**
 
-[Drag Value](drag-value.md) |
-[Keyboard Shortcuts](keyboard-shortcuts.md) |
-[Issue #2896](https://github.com/aseprite/aseprite/issues/2896)
+[拖动值](drag-value.md) | [键盘快捷键](keyboard-shortcuts.md) | [议题 #2896](https://github.com/aseprite/aseprite/issues/2896)
