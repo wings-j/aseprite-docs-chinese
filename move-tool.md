@@ -1,32 +1,27 @@
-# Move Tool
+# 移动工具
 
-You can select the Move tool ![Move tool icon](tools/move-tool.png)
-with <kbd>V</kbd> key or using <kbd>Ctrl</kbd> key (or <kbd>⌘</kbd> on macOS).
+你可以用<kbd>V</kbd>或<kbd>Ctrl</kbd>（macOS 中的<kbd>⌘</kbd>）激活移动工具![Move tool icon](tools/move-tool.png)。
 
-This tool is useful to move the *xy*-position of a [cel](cel.md).
+注意：
 
-Notes:
+- 你不能移动背景图层
+- 使用<kbd>Shift</kbd>（<kbd>⇧</kbd>）锁定 x 或 y 轴。
 
-* You cannot move the Background layer.
-* Use <kbd>Shift</kbd> (<kbd>⇧</kbd>) key to lock x- or y-axis.
+## 选择和移动图层
 
-## Select and Move Layers
-
-When you use <kbd>Ctrl</kbd> (or <kbd>⌘</kbd>) key and <kbd>Left click</kbd>, the Move tool is
-selected with the *Auto Select Layer* option checked:
+当你用<kbd>Ctrl</kbd>（或者<kbd>⌘</kbd>）和<kbd>左键</kbd>，如果*Auto Select Layer*选项选中，移动工具会被激活：
 
 ![Autoselect option](move-tool/autoselect.png)
 
-This option allows you to select and move layers in a quickly way:
+这个选项让你可以用一种快速的方式选择和移动图层：
 
 ![Autoselect preview](move-tool/autoselect.gif)
 
-## Move Multiple Cels
+## 移动多个图层
 
-You can move several cels at the same time using the timeline and the
-sprite editor together:
+你可以用时间线和精灵编辑器同时移动多个赛璐珞：
 
-1. Select multiple cels in the timeline, and then
-2. Move the cel in the sprite editor.
+1. 在时间线中选择多个赛璐珞。
+2. 在精灵编辑器中移动赛璐珞。
 
-![Move multiple cels](move-tool/move-multiple-cels.gif)
+![移动多个赛璐珞](move-tool/move-multiple-cels.gif)
