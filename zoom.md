@@ -25,6 +25,6 @@ Or using other alternatives:
 
 **参见**
 
-[Drawing](drawing.md) |
+[绘画](drawing.md) |
 [拖动值](drag-value.md) |
 [Mouse Wheel Behavior](https://github.com/aseprite/aseprite/issues/2896)
