@@ -1,12 +1,9 @@
-# Reverse Frames
+# 反转帧
 
-You can reverse frames selecting a range of frames in the
-[时间线](timeline.md) and using the _Frame > Reverse Frames_ menu
-option.
+你可以在[时间线](timeline.md)中用*Frame > Reverse Frames*菜单选项反转选择的帧。
 
 ---
 
 **参见**
 
-[动画](animation.md) |
-[时间线](timeline.md)
+[动画](animation.md) | [时间线](timeline.md)
