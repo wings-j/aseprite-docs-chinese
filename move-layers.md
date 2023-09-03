@@ -1,6 +1,6 @@
 # Move Layers
 
-Use the [timeline](timeline.md) to move layers:
+Use the [时间线](timeline.md) to move layers:
 
 ![Move Layers](move-layers/move-layers.gif)
 

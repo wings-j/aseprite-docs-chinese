@@ -6,7 +6,7 @@ You should become familiar with these window elements:
 
 The most important elements are the
 [sprite editor](sprite-editor.md), the
-[timeline](timeline.md), the [color bar](color-bar.md),
+[时间线](timeline.md), the [color bar](color-bar.md),
 and the [preview window](preview-window.md).
 Other familiar elements are the [menu bar](menu-bar.md) and
 the [tool bar](tool-bar.md). The [status bar](status-bar.md) also gives you valuable

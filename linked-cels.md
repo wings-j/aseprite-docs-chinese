@@ -1,33 +1,23 @@
-# Linked Cels
+# 链接的赛璐珞
 
-Two cels are linked when they share their image and the _xy_-coordinate.
-Linked cels looks as follow in the [timeline](timeline.md):
+当两个赛璐珞共享它们的图像和*xy*坐标时，它们就被链接起来了。链接的赛璐珞在[时间线](timeline.md)中如此显示：
 
 ![Linked Cels](linked-cels/linked-cels.png)
 
-When you modify one of these cels, all linked cels are modified. In
-this way you can propagate the same change into several
-frames. E.g. If you have a static background, you would prefer linked
-cels, so you can make changes just in one cel to view the change in
-the whole animation.
+当你修改其中一个这些赛璐珞时，所有链接的赛璐珞都会被修改。用这种方法，你可以传递同一个改变到好几个帧。比如，如果你有一个静态的背景，你会更喜欢链接的赛璐珞，这样你可以在一个赛璐珞中修改，而影响整个动画。
 
-To create linked cels you have to
-[copy cels](copy-cels.md)
-in a [continuous layer](continuous-layers.md)
-(i.e. a layer with the Continuous icon ![Continuous icon](continuous-layers/continuous-layer.png)).
+想要创建链接赛璐珞，你需要在一个[连续图层](continuous-layers.md)中[复制赛璐珞](copy-cels.md)（也就是有连续标志![Continuous icon](continuous-layers/continuous-layer.png)的图层）。
 
-## Unlink Cels
+## 取消链接赛璐珞
 
-There is a way to unlink cels using right-click and _Unlink_ option in
-the timeline:
+使用右键和*Unlink*选项可以取消时间线中的赛璐珞：
 
 ![Unlink Cels](linked-cels/unlink-cels.gif)
 
-Unlinked cels will contain their own copy of the image. So now if you
-modify them the change will not be propagated to other cels.
+被取消链接的赛璐珞会包含它们自己的图像副本。所以现在如果你修改它们，变更不会传递到其它赛璐珞。
 
 ---
 
 **参见**
 
-[Continuous Layers](continuous-layers.md)
+[连续图层](continuous-layers.md)

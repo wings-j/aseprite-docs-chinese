@@ -16,7 +16,7 @@
 
 1. Create new [frames](animation.md) with _Frame > New Frame_ menu (<kbd>Alt+N</kbd> key).
 
-1. Use the [timeline](timeline.md) (<kbd>Tab</kbd> key) to [copy layers](copy-layers.md), [frames](copy-frames.md), or [cels](copy-cels.md).
+1. Use the [时间线](timeline.md) (<kbd>Tab</kbd> key) to [copy layers](copy-layers.md), [frames](copy-frames.md), or [cels](copy-cels.md).
 
 1. Save your work with _File > Save_ menu as a `.ase` file to preserve
    all your image information (layers, frames, etc.).

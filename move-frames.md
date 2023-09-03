@@ -1,6 +1,6 @@
 # Move Frames
 
-Use the [timeline](timeline.md) to move frames:
+Use the [时间线](timeline.md) to move frames:
 
 ![Move Frames](move-frames/move-frames.gif)
 

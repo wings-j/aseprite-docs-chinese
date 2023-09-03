@@ -1,6 +1,6 @@
 # Selected Range
 
-In the [timeline](timeline.md) you can select a range of frames:
+In the [时间线](timeline.md) you can select a range of frames:
 
 <img src="/docs/range/frames-range.png" alt="Frames Range " class="x2" />
 

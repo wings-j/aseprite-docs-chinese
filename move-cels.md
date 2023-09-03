@@ -1,6 +1,6 @@
 # Move Cels
 
-Use the [timeline](timeline.md) to move cels:
+Use the [时间线](timeline.md) to move cels:
 
 ![Move Cels](move-cels/move-cels.gif)
 
