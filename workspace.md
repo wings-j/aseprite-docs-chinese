@@ -33,6 +33,6 @@ with the <kbd>Left Mouse Button</kbd>:
 [Sprite Editor](sprite-editor.md) |
 [Status Bar](status-bar.md) |
 [Tabs](tabs.md) |
-[Timeline](timeline.md) |
+[时间线](timeline.md) |
 [Tool Bar](tool-bar.md) |
 [Menu Bar](menu-bar.md)

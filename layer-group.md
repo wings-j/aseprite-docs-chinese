@@ -1,22 +1,15 @@
-# Layer Group
+# 图层组
 
-To better organize your sprite, you can group a set of layers in a little folder:
+为了更好的组织精灵，你可以将一些列图层分组到一个小文件夹中：
 
 ![Layer Groups](layer-group/layer-groups.png)
 
-With groups you can show/hide (<kbd>Shift+X</kbd>) or lock/unlock
-several layers at the same time, or expand/collapse the folder
-in the [timeline](timeline.md) (<kbd>Shift+E</kbd>)
+有了分组你可以同时显示/隐藏（<kbd>Shift+X</kbd>）或者锁定/解锁或者展开/收起（<kbd>Shift+E</kbd>）[时间线](timeline.md)中的文件夹。
 
-To create a new _Layer Group_ you can use the _Layer > New > New
-Group_ menu, or pressing <kbd>Alt+Shift+N</kbd> shortcut. If there is
-a [selected range of layers](range.md) in the [timeline](timeline.md),
-the new group will be created containing those selected layers
-automatically.
+想要创建一个新的*图层组*，你可以使用*Layer > New > New Group*菜单，或者按下<kbd>Alt+Shift+N</kbd>快捷键。如果在[时间线](timeline.md)中选择了[一个范围内的他图层](range.md)，新组创建时会自动包含这些被选择的图层。
 
 ---
 
 **参见**
 
-[Layers](layers.md) |
-[Timeline](timeline.md)
+[图层](layers.md) | [时间线](timeline.md)

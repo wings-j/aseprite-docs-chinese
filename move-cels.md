@@ -24,4 +24,4 @@ the [Move tool](move-tool.md) ![Move tool icon](tools/move-tool.png).
 [Copy Cels](copy-cels.md) |
 [Move Frames](move-frames.md) |
 [Move Tool](move-tool.md) |
-[Timeline](timeline.md)
+[时间线](timeline.md)

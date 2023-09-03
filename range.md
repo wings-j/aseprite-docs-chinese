@@ -22,4 +22,4 @@ After selecting the range you can do several operations with it like:
 
 **参见**
 
-[Timeline](timeline.md)
+[时间线](timeline.md)

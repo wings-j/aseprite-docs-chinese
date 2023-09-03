@@ -48,5 +48,5 @@ documents using _Edit > Copy_ and _Edit > Paste_.
 
 [Animation](animation.md) |
 [Onion Skinning](onion-skinning.md) |
-[Layers](layers.md) |
+[图层](layers.md) |
 [Cel](cel.md)

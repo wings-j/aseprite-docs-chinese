@@ -15,4 +15,4 @@ Use the [timeline](timeline.md) to move frames:
 
 [Copy Frames](copy-frames.md) |
 [Move Cels](move-cels.md) |
-[Timeline](timeline.md)
+[时间线](timeline.md)

@@ -10,5 +10,5 @@ select _New_ option:
 
 **参见**
 
-[Layers](layers.md) |
-[Timeline](timeline.md)
+[图层](layers.md) |
+[时间线](timeline.md)
