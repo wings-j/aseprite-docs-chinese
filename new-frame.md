@@ -1,40 +1,22 @@
-# New Frame
+# 新帧
 
-You can add frames using:
+你可以这样添加新帧：
 
-* *Frame > New Frame* (<kbd>Alt+N</kbd>): Creates a copy of the current frame in
-   the next position.
-* *Frame > New Empty Frame* (<kbd>Alt+B</kbd>): Creates a new empty frame. (All
-   [transparent layers](layers.md#transparent-layers) with an empty
-   cel, and the [Background layer](layers.md#background-layer) is
-   cleared with the active background color.)
-* *Frame > Duplicated Cels* (<kbd>Alt+D</kbd>): Copies the current cel, or
-   creates a copy of the current Timeline selection, into the next
-   position/frame.
-* *Frame > Duplicated Linked Cels* (<kbd>Alt+Shift+D</kbd> or <kbd>Alt+M</kbd>): Creates
-  links to the current cel (or the current Timeline selection) into
-  the next position/frame.
+- _Frame > New Frame_（<kbd>Alt+N</kbd>）在下一个位置创建当前帧的副本.
+- _Frame > New Empty Frame_（<kbd>Alt+B</kbd>）：创建一个新的空帧（[透明图层](layers.md#transparent-layers)创建一个空赛璐珞，[背景图层](layers.md#background-layer)使用激活背景色填充）。
+- _Frame > Duplicated Cels_（<kbd>Alt+D</kbd>）：复制当前赛璐珞，或者创建当前时间线选区，到下一个位置/帧。
+- _Frame > Duplicated Linked Cels_（<kbd>Alt+Shift+D</kbd> or <kbd>Alt+M</kbd>）：创建链接到当前赛璐珞（或者当前时间线选择去）到下一个位置/帧。
 
-The little `+` in the status bar can be used to add new frames (it's like pressing <kbd>Alt+N</kbd>):
+状态栏的小`+`符号可以用来添加新帧（如同按下<kbd>Alt+N</kbd>）。
 
 ![New Frame Button](new-frame/new-frame-button.png)
 
-## New Frame
+## 新帧
 
-Using *View > New Frame* (<kbd>Alt+N</kbd> key) you can create a new frame that
-is an exact copy of the current one. For [continuous layers](continuous-layers.md)
-cels will be [linked](linked-cels.md)
+使用*View > New Frame*（<kbd>Alt+N</kbd>）创建一个当前帧的副本。对于[连续图层](continuous-layers.md)，赛璐珞会被[链接](linked-cels.md)。
 
-## New Empty Frame
+## 新空帧
 
-When a new empty frame is added with <kbd>Alt+B</kbd>, all
-[transparent layers](layers.md#transparent-layers) will not
-contain cels, and the [background layer](layers.md#background-layer)
-will be cleared with the [background color](color-bar.md#background-color).
+当用<kbd>Alt+B</kbd>添加新帧时，所有[透明图层](layers.md#transparent-layers)都不会包含赛璐珞，[背景图层](layers.md#background-layer)会被用[背景色](color-bar.md#background-color)清除。
 
-Empty frames are also created when you [move](move-cels.md) or
-[copy cels](copy-cels.md) beyond the end of the animation.
-
-## Duplicated Cels
-
-Some information: https://community.aseprite.org/t/913
+当你[移动](move-cels.md)或者[复制赛璐珞](copy-cels.md)到动画末尾的时候，会创建空帧。

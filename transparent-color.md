@@ -4,7 +4,7 @@ In [RGB](color-mode.md#rgb) and [Grayscale](color-mode.md#grayscale)
 sprites, transparent pixels are colors with `Alpha=0`, but in
 [Indexed](color-mode.md#indexed) color mode, there exist one specific
 and special index in the palette that will represent the transparent
-color for [transparent layers](layers.md#transparent-layers):
+color for [透明图层](layers.md#transparent-layers):
 
 ![Transparent Color](transparent-color/transparent-color-property.png)
 
