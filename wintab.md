@@ -1,49 +1,32 @@
 # Wintab
 
-Wintab (`WinTab32.dll`) is an ancient API created by Wacom to
-communicate tablet-like devices with Windows programs. Before Windows 8,
-this was the "de facto" standard used to access pressure
-information from tablets created by Wacom and other brands. Since
-Windows 8, Microsoft introduced a new official API: the Pointer
-API/Windows Ink.
+Wintab（`WinTab32.dll`）是 Wacom 创造的老 API，它用来在数位板设备和 Windows 程序间通信。在 Windows 8 之前，这曾经是从 Wacom 和其它品牌数位板获取压力信息的事实标准。从 Windows 8 开始，微软引入了新的官方 API，指针 API/Windows 墨水。
 
-Since **Aseprite v1.2.34** (and **v1.3-beta12**), as we've received a
-lot of crash reports related to buggy third-party `WinTab32.dll`s,
-we've switched to the Windows Pointer API by default. (The Wintab
-option is still available from the [Tablet options](tablet.md).)
+自从**Aseprite v1.2.34**（和**v1.3-beta12**）开始，因为我们已经收到了很多有关有问题的第三方`WinTab32.dll`的报告，所以我们已经切换到默认使用 Windows 指针 API。（Wintab 选项在[数位板选项](tablet.md)中仍然可用）
 
-In previous versions of Aseprite, we tried to load this Wintab library
-initially, but it could cause the program to crash randomly. Sometimes
-you can solve this reinstalling drivers, restarting Windows, using the
-Pointer API from [Tablet options](tablet.md), or just disabling Wintab
-usage from _Edit > Preferences > Tablet_ (or from _Edit > Preferences > Experimental_ in older versions):
+在 Aseprite 之前的版本中，我们尝试在初始化时就加载 Wintab 库，但是这可能会引起程序随机崩溃。有时重新安装驱动程序、重启 Windows、从[数位板选项](tablet.md)启用指针 API、或者在*Edit > Preferences > Tablet*（(旧版本中*Edit > Preferences > Experimental*)）直接禁用 Wintab 可以解决问题。
 
 ![Don't load the WinTab driver](wintab/disable-wintab.png)
 
-## Aseprite doesn't start
+## Aseprite 无法启动
 
-If you cannot even start the program, you can execute Aseprite with
-the `-disable-wintab` parameter (available since Aseprite v1.2):
-
-    "C:\Program Files\Aseprite\Aseprite.exe" -disable-wintab
-
-This will avoid loading `WinTab32.dll` file. Your tablet might not
-work correctly, but at least Aseprite can be executed and used with
-your mouse/trackpad (or you can try the [Windows Pointer API](tablet.md)).
+如果你甚至无法启动程序，你可以携带`-disable-wintab`参数（从 Aseprite v1.2 后可用）执行 Aseprite：
+"C:\Program Files\Aseprite\Aseprite.exe" -disable-wintab
+这位禁止加载`WinTab32.dll`文件。你的数位板可能不能正确工作，但至少 Aseprite 可以用你的鼠标/轨迹板执行（或者你可以尝试[Windows 指针 API](tablet.md)）。
 
 ## Steam
 
-On Steam you can add the `-disable-wintab` option in the Aseprite launch options:
+在 Steam 你可以在 Aseprite 启动选项中添加`-disable-wintab`选项：
 
-1. Right-click Aseprite in your Steam library and open its "Properties":
+1. 在 Steam 库中的 Aseprite 右键点击并代开它的“属性”：
 
    ![Open Aseprite Properties](steam/steam-1-open-properties.png)
 
-2. Click the "Set Launch Options" button:
+2. 点击“设置启动选项”按钮：
 
    ![Open launch options](steam/steam-2-launch-options.png)
 
-3. Add the `-disable-wintab` option and press "OK":
+3. 添加`-disable-wintab`选项并点击“OK”：
 
    ![Add disable wintab option](steam/steam-3-disable-wintab.png)
 
@@ -51,5 +34,4 @@ On Steam you can add the `-disable-wintab` option in the Aseprite launch options
 
 **参见**
 
-[Tablet](tablet.md) |
-[Troubleshooting](troubleshooting.md)
+[数位板](tablet.md) | [故障排除](troubleshooting.md)

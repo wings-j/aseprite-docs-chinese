@@ -1,60 +1,46 @@
-# Troubleshooting
+# 故障排除
 
-If you have a problem starting Aseprite (e.g. it starts and closes
-inmediately), you can try:
+如果你在启动（比如启动并立即关闭） Aseprite 是遇到问题，你可以尝试：
 
-1. [Reset your preferences](reset-preferences.md)
-1. Use the [debug option](debug.md), this generates a `Aseprite-v1.2-DebugOutput.txt` file
-1. Windows only: Check if the last line of the generated
-   `Aseprite-v1.2-DebugOutput.txt` file says:
-   `PEN: Wintab library loaded`. If that is the case, try [disabling Wintab](wintab.md).
-1. In other case, contact us at
-   [support@aseprite.org](mailto:support@aseprite.org) with the
-   `Aseprite-v1.2-DebugOutput.txt` file.
+1. [重置偏好](reset-preferences.md)
+2. 使用[调试选项](debug.md)，这会生成一个`Aseprite-v1.2-DebugOutput.txt`文件。
+3. 仅在 Windows 中：检查生成的`Aseprite-v1.2-DebugOutput.txt`文件的最后一行是否有`PEN: Wintab library loaded`。如果有，尝试[禁用 Wintab](wintab.md)。
+4. 其它情况，通过[support@aseprite.org](mailto:support@aseprite.org)联系我们，并发送`Aseprite-v1.2-DebugOutput.txt`文件。
 
-You might also try to find your problem on:
+你也可以在这些地方查找你的问题：
 
-- [Aseprite Community](https://community.aseprite.org)
-- [Steam General Discussion forum](http://steamcommunity.com/app/431730/discussions/0/)
-- [Steam Bug Reports forum](http://steamcommunity.com/app/431730/discussions/2/)
-- [Closed bugs on the GitHub](https://github.com/aseprite/aseprite/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aclosed%20%20label%3Abug)
+- [Aseprite 社区](https://community.aseprite.org)
+- [Steam 通用论坛](http://steamcommunity.com/app/431730/discussions/0/)
+- [Steam 问题报告论坛](http://steamcommunity.com/app/431730/discussions/2/)
+- [GitHub 中关闭的问题](https://github.com/aseprite/aseprite/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aclosed%20%20label%3Abug)
 
-## Crash/Data Lost
+## 崩溃/数据丢失
 
-In case of crash, you might be able to [recover some sprites](data-recovery.md).
+如果崩溃，你可能需要[恢复精灵](data-recovery.md)。
 
-## Tablet Problems
+## 数位板问题
 
-In case your tablet (or the pressure of your tablet) doesn't work,
-please check the [tablet](tablet.md) page.
+如果你的数位板（或数位板的压力）无效，请查看[tablet](tablet.md)页。
 
-## macOS Rendering Problems
+## macOS 渲染问题
 
-Aseprite uses an asynchronous rendering
-on macOS ([CALayer's drawsAsynchronously](https://developer.apple.com/documentation/quartzcore/calayer/1410974-drawsasynchronously?language=objc)).
-Since Aseprite v1.2.20 you can disable this in case that you have some
-problems e.g. black rectangles in the screen (anyway the performance
-will drop significantly if you are using
-a [color profile](color-profile.md) like Display P3).
+在 macOS 中，Aseprite 使用异步渲染（[CALayer's drawsAsynchronously](https://developer.apple.com/documentation/quartzcore/calayer/1410974-drawsasynchronously?language=objc)）。从 Aseprite v1.2.20 开始，如果你遇到问题，比如屏幕中出现黑色矩形（无论如何如果你使用 Display P3 的[颜色配置](color-profile.md)，性能会极大地下降），可以禁用它。
 
-To disable this:
+要禁用它：
 
-1. Close Aseprite
-2. Open `aseprite.ini` file in the [preferences folder](preferences-folder.md)
-3. Search the `[general]` section and add this option `osx_async_view = false`
+1. 关闭 Aseprite。
+2. 在[偏好文件夹](preferences-folder.md)中打开`aseprite.ini`文件。
+3. 搜索`[general]`节并添加选项`osx_async_view = false`。
 
 ```
 [general]
 osx_async_view = false
 ```
 
-4. Save the file and start Aseprite
+4. 保存文件并启动 Aseprite。
 
 ---
 
 **参见**
 
-[重置偏好](reset-preferences.md) |
-[Data Recovery](data-recovery.md) |
-[Debug](debug.md) |
-[Tablet](tablet.md)
+[重置偏好](reset-preferences.md) | [数据恢复](data-recovery.md) | [调试](debug.md) | [数位板](tablet.md)
