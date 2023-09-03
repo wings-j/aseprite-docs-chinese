@@ -1,7 +1,7 @@
-# Status Bar
+# 状态栏
 
-The status bar is the region at the bottom of the screen:
+状态栏位于屏幕底部：
 
 ![Statusbar Overview](status-bar/overview.png)
 
-It shows different content depending on the active mouse position.
+它根据鼠标位置显示不同的内容。
