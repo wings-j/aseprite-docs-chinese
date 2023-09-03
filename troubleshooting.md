@@ -54,7 +54,7 @@ osx_async_view = false
 
 **参见**
 
-[Reset Preferences](reset-preferences.md) |
+[重置偏好](reset-preferences.md) |
 [Data Recovery](data-recovery.md) |
 [Debug](debug.md) |
 [Tablet](tablet.md)
