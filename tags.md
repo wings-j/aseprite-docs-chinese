@@ -21,5 +21,4 @@ _Forward_, _Reverse_, or _Ping-pong_.
 
 **参见**
 
-[动画](animation.md) |
-[精灵](sprite.md)
+[动画](animation.md) | [精灵](sprite.md)
