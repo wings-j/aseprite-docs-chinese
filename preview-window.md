@@ -1,21 +1,13 @@
-# Preview Window
+# 预览窗口
 
-The preview window is the little window that can show you the
-animation preview in realtime while you edit your animation:
+预览窗口时你在编辑动画时可以实时预览动画的小窗口：
 
-<img src="/docs/preview-window/preview-window.png" alt="Preview Window" class="x2" />
+你可以用<kbd>F7</kbd>或*View > Preview*菜单选项来显示/隐藏小窗口。
 
-You can show/hide this little window pressing the <kbd>F7</kbd> key or with the
-_View > Preview_ menu option.
-
-You can also press the little play button ![Play
-button](preview-window/play-button.png) or press <kbd>Shift+Enter</kbd> to
-start playing the sprite animation (or the current [tag](tags.md)) in
-the window.
+你也可以点击播放按钮![Play button](preview-window/play-button.png)或者按下<kbd>Shift+Enter</kbd>以在窗口中开始播放精灵动画（或当前[标签](tags.md)）。
 
 ---
 
 **参见**
 
-[工作空间](workspace.md) |
-[动画](animation.md)
+[工作空间](workspace.md) | [动画](animation.md)
