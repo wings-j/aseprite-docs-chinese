@@ -18,4 +18,4 @@ the window.
 **参见**
 
 [工作空间](workspace.md) |
-[Animation](animation.md)
+[动画](animation.md)

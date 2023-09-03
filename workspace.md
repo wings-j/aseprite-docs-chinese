@@ -5,7 +5,7 @@ You should become familiar with these window elements:
 <img src="/docs/workspace/screen.png" alt="Workspace Screenshot" class="xN" />
 
 The most important elements are the
-[sprite editor](sprite-editor.md), the
+[精灵编辑器](sprite-editor.md), the
 [时间线](timeline.md), the [color bar](color-bar.md),
 and the [preview window](preview-window.md).
 Other familiar elements are the [menu bar](menu-bar.md) and
@@ -30,7 +30,7 @@ with the <kbd>Left Mouse Button</kbd>:
 
 [Color Bar](color-bar.md) |
 [Context Bar](context-bar.md) |
-[Sprite Editor](sprite-editor.md) |
+[精灵编辑器](sprite-editor.md) |
 [Status Bar](status-bar.md) |
 [Tabs](tabs.md) |
 [时间线](timeline.md) |

@@ -46,7 +46,7 @@ documents using _Edit > Copy_ and _Edit > Paste_.
 
 **参见**
 
-[Animation](animation.md) |
+[动画](animation.md) |
 [Onion Skinning](onion-skinning.md) |
 [图层](layers.md) |
 [Cel](cel.md)

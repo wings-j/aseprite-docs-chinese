@@ -10,4 +10,4 @@ but you can change this configuration from _Edit > Preferences > Editor_:
 **参见**
 
 [Basics](basics.md) |
-[Sprite Editor](sprite-editor.md)
+[精灵编辑器](sprite-editor.md)

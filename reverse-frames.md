@@ -8,5 +8,5 @@ option.
 
 **参见**
 
-[Animation](animation.md) |
+[动画](animation.md) |
 [时间线](timeline.md)
