@@ -1,44 +1,31 @@
-# Timeline
+# 时间线
 
-This is the timeline:
+时间线显示激活精灵的[图层](layers.md)和帧。你可以用*View > Timeline*菜单选项或按下<kbd>Tab</kbd>键来显示或隐藏它。它在你创建一个[新帧](new-frame.md)或者[图层](new-layer.md)的时候自动出现。（这个行为可以在*Edit > Options > Timeline > Show timeline automatically*关闭）
 
-<img src="/docs/timeline/timeline.png" alt="Timeline" class="xN" />
+### 常用操作
 
-It shows the [layers](layers.md) and frames of the active sprite. You can use the
-_View > Timeline_ menu option or press the <kbd>Tab</kbd> key to show or hide
-it. It also appears automatically when you create a [new Frame](new-frame.md) or
-[Layer](new-layer.md). (This behavior can be disable from _Edit > Options > Timeline >
-Show timeline automatically_.)
+- [图层](layers.md):
+  - [移动图层](move-layers.md)
+  - [复制图层](copy-layers.md)
+- [帧](animation.md):
+  - [移动帧](move-frames.md)
+  - [复制帧](copy-frames.md)
+- [赛璐珞](cel.md):
+  - [移动赛璐珞](move-cels.md)
+  - [复制赛璐珞](copy-cels.md)
 
-You can use _Layer > New Layer_ menu (<kbd>Shift+N</kbd>) to create new layers
-or _Frame > New Frame_ menu (<kbd>Alt+N</kbd>) to add frames.
+## 偏好
 
-### Common Operations
+你可以按下![Configure Timeline Icon](animation/configure-timeline.png)按钮来配置时间线。
 
-- [Layers](layers.md):
-  - [Move layers](move-layers.md)
-  - [Copy layers](copy-layers.md)
-- [Frames](animation.md):
-  - [Move frames](move-frames.md)
-  - [Copy frames](copy-frames.md)
-- [Cels](cel.md):
-  - [Move cels](move-cels.md)
-  - [Copy cels](copy-cels.md)
+一些选项：
 
-## Preferences
+1. [洋葱皮](onion-skinning.md)
+1. [第一帧为 0](https://community.aseprite.org/t/3895/2)（或其它数字）
 
-You can configure the Timeline pressing
-the ![Configure Timeline Icon](animation/configure-timeline.png) button.
+## 在文档间复制
 
-Some options:
-
-1. [Onion Skinning](onion-skinning.md)
-1. [First frame as 0](https://community.aseprite.org/t/3895/2) (or any other number)
-
-## Copy between documents
-
-You can copy and paste layers, frames, or cels between different
-documents using _Edit > Copy_ and _Edit > Paste_.
+你可以用*Edit > Copy* and *Edit > Paste*在不同文档间复制粘贴图层、帧或赛璐珞。
 
 ![Copy and Paste on Timeline](timeline/timeline-copy-and-paste.gif)
 
@@ -46,7 +33,4 @@ documents using _Edit > Copy_ and _Edit > Paste_.
 
 **参见**
 
-[动画](animation.md) |
-[Onion Skinning](onion-skinning.md) |
-[图层](layers.md) |
-[Cel](cel.md)
+[动画](animation.md) | [洋葱皮](onion-skinning.md) | [图层](layers.md) | [赛璐珞](cel.md)
