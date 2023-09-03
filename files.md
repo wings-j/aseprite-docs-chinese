@@ -20,7 +20,7 @@ Aseprite 有自己的文件格式来保存你的工作：`.aseprite`文件（或
 
 ## 偏好
 
-[Preferences](preferences.md)保存在[偏好文件夹](preferences-folder.md)的多个文件中：
+[偏好](preferences.md)保存在[偏好文件夹](preferences-folder.md)的多个文件中：
 
 ### aseprite.ini
 

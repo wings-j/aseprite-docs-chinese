@@ -50,5 +50,5 @@ platform to reset the preferences manually.
 **参见**
 
 [Troubleshooting](troubleshooting.md) |
-[Preferences](preferences.md) |
+[偏好](preferences.md) |
 [Preferences Folder](preferences-folder.md)

@@ -45,5 +45,5 @@ pointing to other folder.
 
 **参见**
 
-[Preferences](preferences.md) |
+[偏好](preferences.md) |
 [Reset Preferences](reset-preferences.md)

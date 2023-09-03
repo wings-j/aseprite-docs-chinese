@@ -40,14 +40,11 @@
 
 如果没有背景图层，你可以使用*Layer > Convert To > Background*菜单来将任何透明涂层转换为背景图层。所有的透明像素会被填充为激活的[背景色](color-bar.md#background-color)。
 
-> Previously, on Aseprite v1.2 the option was _Layer > Background from Layer_
+> 以前，在 Aseprite V1.2 中，选项位于*Layer > Layer from Background*。
 
 ## Layer from Background
 
-If you want to convert the background to a transparent layer
-(e.g. because you want to move it with the [Move tool](move-tool.md)
-![Move tool icon](tools/move-tool.png)), you can use the
-_Layer > Convert To > Layer_ menu.
+如果你想转换背景为一个透明图层（比如因为你想用[移动工具](move-tool.md)![Move tool icon](tools/move-tool.png)移动它），你可以使用*Layer > Convert To > Layer*菜单。
 
 > 以前，在 Aseprite V1.2 中，选项位于*Layer > Layer from Background*。
 

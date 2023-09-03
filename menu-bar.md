@@ -24,4 +24,4 @@ bar_](preferences.md#general) option.
 **参见**
 
 [Workspace](workspace.md) |
-[Preferences](preferences.md)
+[偏好](preferences.md)
