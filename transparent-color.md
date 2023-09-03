@@ -21,5 +21,5 @@ going to [_Sprite > Properties_](sprite-properties.md) menu option.
 **参见**
 
 [Color](color.md) |
-[Color Mode](color-mode.md) |
+[颜色模式](color-mode.md) |
 [Sprite Properties](sprite-properties.md)

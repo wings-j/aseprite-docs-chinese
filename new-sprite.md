@@ -1,17 +1,14 @@
-# New Sprite
+# 新精灵
 
-You can create a new sprite from _File > New_ menu (<kbd>Ctrl+N</kbd> or <kbd>⌘N</kbd>).
+你可以用*File > New*（<kbd>Ctrl+N</kbd>或者<kbd>⌘N</kbd>）来创建一个新精灵。
 
 ![New sprite dialog](new-sprite/newsprite.png)
 
-Here you select the sprite dimension (in pixels), its
-[color mode](color-mode.md), and the default background color.
-The sprite is created with a specific [palette by default](default-palette.md).
+在这里可以选择景林过的维度（像素）、[颜色模式](color-mode.md)和默认背景色。精灵创建时携带一个特定的[默认调色板](default-palette.md)。
 
-## New Sprite from Selection
+## 从选区创建新精灵
 
-You can create a new sprite from the active selection using
-_Edit > New Sprite from Selection_ (<kbd>Ctrl+Alt+N</kbd> or <kbd>⌥⌘N</kbd>):
+你可以用*Edit > New Sprite from Selection*（<kbd>Ctrl+Alt+N</kbd>或<kbd>⌥⌘N</kbd>）从激活的选区创建一个新精灵。
 
 ![New sprite from selection](new-sprite/new-sprite-from-selection.gif)
 
@@ -19,4 +16,4 @@ _Edit > New Sprite from Selection_ (<kbd>Ctrl+Alt+N</kbd> or <kbd>⌥⌘N</kbd>)
 
 **参见**
 
-[Color Mode](color-mode.md)
+[颜色模式](color-mode.md)
