@@ -1,27 +1,19 @@
-# Menu Bar
+# 菜单栏
 
-The Aseprite menu bar is the menu at the top of the [main window](workspace).
+Aseprite 菜单栏就是[主窗口](workspace.md)顶部的菜单。
 
 ![Aseprite Menu Bar](menu-bar/aseprite-menubar.png)
 
-You can access the main functionality of Aseprite from this menu.
-Pressing <kbd>Alt+underscored letter</kbd> will open the given menu,
-e.g. <kbd>Alt+F</kbd> will open the _File_ menu. After that you can
-press an underscored key to access submenus. E.g. <kbd>Alt+F</kbd> and
-then <kbd>N</kbd> will access _File > New_ menu option.
+你可以从这个菜单栏打开 Aseprite 的主要功能。按下<kbd>Alt + 着重字母</kbd>会打开给定的菜单，比如<kbd>Alt + F</kbd>会打开*File*菜单。之后你可以按下着重字母来打开子菜单。比如<kbd>Alt+F</kbd>和<kbd>N</kbd>会打开*File > New*菜单选项。
 
-On macOS this bar is hidden by default as you can use the macOS menu
-at the top of the screen:
+macOS 中这个栏默认隐藏，你可以使用屏幕顶部的 macOS 的菜单栏。
 
 ![macOS Menu Bar](menu-bar/macos-menubar.png)
 
-Anyway you can show the Aseprite menu bar by checking the [_Edit >
-Preferences > General > Show Aseprite menu
-bar_](preferences.md#general) option.
+不论如何你可以通过选中[_Edit > Preferences > General > Show Aseprite menubar_](preferences.md#general)来显示 Aseprite 菜单栏。
 
 ---
 
 **参见**
 
-[Workspace](workspace.md) |
-[偏好](preferences.md)
+[工作空间](workspace.md) | [偏好](preferences.md)

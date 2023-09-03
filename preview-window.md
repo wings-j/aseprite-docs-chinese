@@ -17,5 +17,5 @@ the window.
 
 **参见**
 
-[Workspace](workspace.md) |
+[工作空间](workspace.md) |
 [Animation](animation.md)

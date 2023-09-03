@@ -25,5 +25,5 @@ You can customize the Sprite Editor behavior from [_Edit > Preferences > Editor_
 
 [Sprite](sprite.md) |
 [时间线](timeline.md) |
-[Workspace](workspace.md) |
+[工作空间](workspace.md) |
 [Basics](basics.md)
