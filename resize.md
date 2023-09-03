@@ -1,11 +1,11 @@
-# Resize Sprite or Selection
+# 调整精灵和选区的大小
 
-You can resize your sprite using *Edit > Sprite Size* menu option.
+你可以用*Edit > Sprite Size*菜单选项调整精灵的大小。
 
-> Note: Resizing a sprite resizes all slices accordingly, changing their position and size.
+> 注意：重新调整精灵大小会相应的改变所有切片的位置和大小。
 
 ![Resize](resize/resize.gif)
 
-You can resize a selection using handles.
+你可以用手柄调整选区的大小。
 
 ![Resize selection using handles](resize/resize-selection.gif)
