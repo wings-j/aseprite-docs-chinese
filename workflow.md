@@ -1,31 +1,14 @@
 # Workflow
 
-1. [Create a new sprite](new-sprite.md) with _File > New_ menu (<kbd>Ctrl+N</kbd> or <kbd>⌘N</kbd>),
-   [Open an existent one](open.md) with _File > Open_ menu, or drag-and-drop a file from
-   Windows Explorer to Aseprite window.
-
-1. [绘画](drawing.md) using <kbd>Left click</kbd> or <kbd>Right click</kbd> with the Pencil tool ![Pencil Tool Icon](tools/pencil-tool.png).
-   Pick colors with <kbd>Alt+Left click</kbd> and <kbd>Alt+Right click</kbd>. Change
-   [缩放](zoom.md) with <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd>, <kbd>4</kbd>, <kbd>5</kbd>, <kbd>6</kbd> keys,
-   the mouse wheel, or Zoom tool ![Zoom Tool Icon](tools/zoom-tool.png) (<kbd>Z</kbd> key).
-
-1. [Select](selecting.md) with Marquee tool ![Marquee Tool Icon](tools/marquee-tool.png) (<kbd>M</kbd> key),
-   and drag-and-drop the selection, or [transform it](transformations.md).
-
-1. Create new [layers](layers.md) with _Layer > New Layer_ menu (<kbd>Shift+N</kbd> key).
-
-1. Create new [frames](animation.md) with _Frame > New Frame_ menu (<kbd>Alt+N</kbd> key).
-
-1. Use the [时间线](timeline.md) (<kbd>Tab</kbd> key) to [copy layers](copy-layers.md), [frames](copy-frames.md), or [cels](copy-cels.md).
-
-1. Save your work with _File > Save_ menu as a `.ase` file to preserve
-   all your image information (layers, frames, etc.).
-
-1. Use _File > Save Copy As_ to export your sprite as a `.gif` file to
-   publish your image on a website, or `.png` to save a sequence of
-   files, or as a `.png` [sprite sheet](sprite-sheet.md), etc.
-
-1. Automate the export operation using the [command line interface](cli.md)
+1. 使用*File > New*菜单（<kbd>Ctrl+N</kbd>或<kbd>⌘N</kbd>）[创建一个新精灵](new-sprite.md)，使用*File > Open*菜单[打开一个精灵](open.md)，或从 Windows 资源管理器中拖放一个文件到 Aseprite 窗口。
+2. 使用铅笔工具![Pencil Tool Icon](tools/pencil-tool.png)和鼠标左或右键[绘画](drawing.md)。使用<kbd>Alt+左键</kbd>和<kbd>Alt+右键</kbd>选择颜色。使用<kbd>1</kbd>、<kbd>2</kbd>、<kbd>3</kbd>、<kbd>4</kbd>、<kbd>5</kbd>、<kbd>6</kbd>、鼠标滚轮或者缩放工具![Zoom Tool Icon](tools/zoom-tool.png)（<kbd>Z</kbd>）来[缩放](zoom.md)。
+3. 使用选取工具![Marquee Tool Icon](tools/marquee-tool.png)（<kbd>M</kbd>），拖放选区并进行[变换](transformations.md)。
+4. 使用*Layer > New Layer*菜单（<kbd>Shift+N</kbd>）创建新[图层](layers.md)。
+5. 使用*Layer > New Frame*菜单（<kbd>Alt+N</kbd>）创建新[帧](animation.md)。
+6. 使用[时间线](timeline.md)（<kbd>Tab</kbd>）[复制图层](copy-layers.md)、[帧](copy-frames.md)或[赛璐珞](copy-cels.md)。
+7. 使用*File > Save*菜单保存你的工作为一个`.ase`文件，保存所有图像信息（图层、帧等等）。
+8. 使用*File > Save Copy As*导出你的精灵为一个`.gif`文件，发布你的图片到网站，或者导出为`.png`文件序列，或者一个`.png`[精灵表](sprite-sheet.md)等等。
+9. 使用[命令行接口](cli.md)自动化导出操作。
 
 ---
 
